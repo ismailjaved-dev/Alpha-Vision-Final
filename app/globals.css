@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.last-link {
+    padding: 0;
+}
+
+.last-link > Button {
+    min-width: calc(100%);
+}
+
+.last-link > Button::after {
+    display: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+.textArea {
+    order: 2;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .textArea {
+        order: 1;
+    }
+
+    .reverse .textArea {
+        order: 0 !important;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .serviceBtn::after {
+        display: none !important;
+    }
+
+    .serviceAnchor {
+        padding: 0;
+    }
+
+}
+
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 5.9% 10%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+    }
+}
+
+.glowAnimation{
+    animation: glow 1.5s ease infinite;
+}
+
+.popUp{
+    animation: popUpText 1s ease ;
+    
+}
+
+@keyframes popUpText{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes glow{
+    0%{opacity: 0.5;}
+    50%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
+
+@layer components {
+    .gradientBg{
+        @apply  relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10;
+    }
+    .fluid-container{
+        @apply w-full max-w-fluid mx-auto
+    }
+
+    .btnPrimary{
+        @apply relative bg-background bg-opacity-20 hover:bg-opacity-40 rounded-xl py-3
+    }
+}
