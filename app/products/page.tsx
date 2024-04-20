@@ -2,7 +2,7 @@ import Hero from "@/components/sections/hero";
 import Footer from "@/components/sections/footer";
 import Product from "@/components/sections/productsContent";
 
-export default function () {
+const page = () => {
   return (
     <div>
       <Hero heading="Our Product" desc='Home / Product'/>
@@ -11,3 +11,6 @@ export default function () {
     </div>
   )
 }
+
+
+export default page
