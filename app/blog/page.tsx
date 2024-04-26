@@ -6,7 +6,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <Hero heading="Blog" desc='Blog'/>
+      <Hero heading="Blog" desc="Home / Blog"/>
       <Blog/>
       <Footer />
     </div>

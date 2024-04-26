@@ -136,6 +136,24 @@
     }
 
     .btnPrimary{
-        @apply relative bg-background bg-opacity-20 hover:bg-opacity-40 rounded-xl py-3
+        @apply relative bg-background bg-opacity-20 transition ease-in hover:bg-[#568BFA] rounded-xl py-3 
+    }
+}
+
+h2,h3,h4,h5,h6{
+    margin-bottom: 35px;
+}
+
+.aboutImagesActive{
+    height: 20rem;
+}
+
+.aboutImages{
+    height: 30rem !important;
+}
+
+@media (max-width:640px){
+    .aboutImages{
+      height: 20rem !important;
     }
 }

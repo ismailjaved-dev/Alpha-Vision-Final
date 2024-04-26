@@ -18,6 +18,7 @@ const Footer = () => {
         { title: "Mangement" },
       ]
     },
+    { title: 'Blog' },
     {
       title: 'Services', innerLinks: [
         { title: "Security" },

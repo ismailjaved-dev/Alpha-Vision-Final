@@ -1,35 +1,40 @@
-import {Smartphone} from "lucide-react";
+
 import ContactForm from "@/components/forms/contact-form"
 import Map from "@/components/ui/map";
+import Image from "next/image";
+import { InstagramIcon, FacebookIcon, LinkedinIcon } from 'lucide-react'
 
 const cardsData = [
   {
-    Icon: Smartphone,
+    Icon: '/phoneIcon.png',
     content: <>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>(+62) 812-9250-9595</p>
+      <p>(+62) 823-1024-2185</p>
+      <p>(+62) 823-1024-2185</p>
     </>
   }, {
-    Icon: Smartphone,
+    Icon: '/mailIcon.png',
     content: <>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>info@alphavtechnology.com</p>
+      <p>alikhan@alphavtechnology.com</p>
     </>
   }, {
-    Icon: Smartphone,
+    Icon: '/socialIcon.png',
     content: <>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <div className="flex gap-5">
+      <InstagramIcon className='cursor-pointer transition hover:text-gray' />
+      <FacebookIcon className='cursor-pointer transition hover:text-gray' />
+      <LinkedinIcon className='cursor-pointer transition hover:text-gray' />
+      </div>
+     
     </>
   }, {
-    Icon: Smartphone,
+    Icon: '/locationIcon.png',
     content: <>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>25-08, Soho Capital,</p>
+      <p> Podomoro City,</p>
+      <p>Grogol Petamburan, Jakarta Barat,</p>
+      <p>DKI Jakarta 11470, Indonesia.</p>
     </>
   }]
 
@@ -43,14 +48,16 @@ export default function Contact() {
         Lorem ipsum dolor sit amet consectetur adipiscing elit
       </p>
     </div>
-    <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {
         cardsData.map(({Icon, content}, index) => (
           <div
             key={index}
             className="p-2 lg:p-4 h-64 rounded-xl flex flex-col gap-6 justify-center items-center bg-[#568BFA] text-white">
             <div>
-              <Icon size={72}/>
+  
+              
+              <Image src={Icon} width={60} height={60} alt="" priority/>
             </div>
             <div className="text-xs lg:text-sm text-white/85 text-center">
               {content}
@@ -59,13 +66,13 @@ export default function Contact() {
         ))
       }
     </div>
-    <div className="border-2 border-primary rounded-lg p-10 lg:p-6 space-y-12 bg-[#150F22]">
+    <div className="border-2 border-primary rounded-lg p-6 lg:p-16 space-y-12 bg-[#150F22]">
       <div className="text-center space-y-6">
         <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
           Get in touch with us
         </h2>
         <p className='text-md md:text-lg text-gray'>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit
+        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
         </p>
       </div>
       <ContactForm/>

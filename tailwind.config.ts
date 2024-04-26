@@ -51,7 +51,7 @@ const config = {
         'fluid' : '75rem'
       },
       fontSize: {
-        'h1' : '4.0625rem',
+        'h1' : '65px',
         'h2' : '3.125rem',
         'h3' : '2.8125rem',
         'h4' : '2.1875rem',

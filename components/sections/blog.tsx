@@ -60,6 +60,27 @@ const Blog = () => {
       image: "/blog.png",
       link: "/",
     },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
   ];
 
   const mapData = pathname == "/" ? data.slice(0, 3) : data;
@@ -77,7 +98,7 @@ const Blog = () => {
 
       {pathname !== "/" && (
         <>
-          <div className="grid md:grid-cols-2 gap-10 my-10 p-5 gradientBg">
+          {/* <div className="grid md:grid-cols-2 gap-10 my-10 p-5 gradientBg">
             <div className="hidden md:block relative">
               <Image src={"/blogImg.png"} fill alt="" priority />
             </div>
@@ -95,7 +116,7 @@ const Blog = () => {
                 Curabitur pellentesque nibh nibh, at maximus ante.
               </p>
             </div>
-          </div>
+          </div> */}
         </>
       )}
 

@@ -44,7 +44,7 @@ const ProductsContent = () => {
 
       <div className="w-full mb-24">
         <Swiper
-          slidesPerView={1.5}
+          slidesPerView={1.8}
           centeredSlides={true}
           initialSlide={1}
           loop={true}
@@ -54,7 +54,7 @@ const ProductsContent = () => {
           {
             data.map((res,index)=>{
               return(
-                <SwiperSlide key={index} className="gradientBg py-10 px-16 min-h-[40rem] overflow-hidden ">
+                <SwiperSlide key={index} className="gradientBg py-10 px-16 min-h-[35rem] overflow-hidden ">
                      <div>
                      <h1 className="text-h1 font-bold">{res.title}</h1>
                      <p className={`max-w-[25rem]`}>{res.desc}</p>

@@ -46,7 +46,7 @@ interface ServiceProps {
         {
             serviceLinks.map((res,index)=>{
                 return(
-                    <Link key={index} href={res.link} className={`py-7 px-5 rounded-xl flex items-center justify-center ${pathname == res.link ? "bg-primary" : "relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10"}`} >{res.title}</Link>
+                    <Link scroll={false}	 key={index} href={res.link} className={`py-7 px-5 rounded-xl flex items-center justify-center ${pathname == res.link ? "bg-primary font-semibold" : "relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10"}`} >{res.title}</Link>
                 )
             })
         }
@@ -67,7 +67,7 @@ interface ServiceProps {
                 return(
                     <div key={index} className={`grid md:grid-cols-2 gap-8 md:gap-16 text-start my-16 ${index % 2 === 0 ? 'reverse' : ''}`}>
                         <div className="flex flex-col my-0 lg:my-10 gap-8 items-start textArea">
-                            <h4 className="text-h4">{res.title}</h4>
+                            <h4 className="text-h4 font-semibold mb-0">{res.title}</h4>
                             <p>{res.desc}</p>
                             <Button>Contact Us</Button>
                         </div>

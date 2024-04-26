@@ -12,7 +12,7 @@ const Page = () => {
 
   return (
    <>
-    <Hero heading="Services" desc=""/>
+    <Hero heading="Services" desc="Home / Services"/>
     <ServicesContent pathname={pathname}/>
     <Footer />
    </>

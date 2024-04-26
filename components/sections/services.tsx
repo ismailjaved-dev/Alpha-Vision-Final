@@ -42,7 +42,7 @@ const Services = () => {
   return (
     <div className='w-full max-w-fluid mx-auto py-32 px-5'>
         <div className="text-center">
-            <h1 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold'> Our Services</h1>
+            <h2 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold'> Our Services</h2>
             <p className='text-md text-gray'>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
             </p>
