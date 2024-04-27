@@ -41,7 +41,7 @@ const config = {
         'background' : '#080216',
       },
       transitionDuration: {
-        '2000': '2000ms',
+        '2500': '2500ms',
       },
       fontFamily: {
         sans: ['var(--font-montserrat)'],

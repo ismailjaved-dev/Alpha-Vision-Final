@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Arrow } from "@radix-ui/react-select";
 import { CircleX } from "lucide-react";
+import Link from "next/link";
 
 const Blog = () => {
   const pathname = usePathname();
@@ -157,6 +158,15 @@ const Blog = () => {
           </div>
         ))}
       </div>
+
+      {pathname == "/" && (
+        <div className="flex justify-center my-[5rem]">
+          <Link href={'/blog'}>
+          <Button>See More</Button>
+          </Link>
+        </div>
+      )}
+
     </div>
   );
 };

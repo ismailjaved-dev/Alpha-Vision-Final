@@ -53,7 +53,7 @@ const AlphaBot = () => {
             </p>
         </div>
         <div className='w-full flex justify-center items-center relative py-24 sm:py-32 z-10  p-5'>
-            <Image src='/bot.png' height={500} width={300} alt='Alpha Bot' className='animate-bounce duration-2000' unoptimized/>
+            <Image src='/bot.png' height={500} width={300} alt='Alpha Bot' className='animate-bounce duration-2500' unoptimized/>
             <div className="absolute bottom-10 -z-10 p-5">
                 <Image src='/bot_light.png' className='glowAnimation' height={120} width={355} alt='Alpha Bot' unoptimized/>
             </div>
