@@ -1,8 +1,11 @@
-
+"use client"
+import React,{useEffect} from "react";
 import ContactForm from "@/components/forms/contact-form"
 import Map from "@/components/ui/map";
 import Image from "next/image";
 import { InstagramIcon, FacebookIcon, LinkedinIcon } from 'lucide-react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const cardsData = [
   {
@@ -39,6 +42,13 @@ const cardsData = [
   }]
 
 export default function Contact() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000 // Duration in milliseconds
+    });
+  }, []);
+
   return <section className='w-full max-w-fluid mx-auto py-24 px-5 space-y-16'>
     <div className="text-center space-y-6">
       <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
@@ -53,7 +63,9 @@ export default function Contact() {
         cardsData.map(({Icon, content}, index) => (
           <div
             key={index}
-            className="p-2 lg:p-4 h-64 rounded-xl flex flex-col gap-6 justify-center items-center bg-[#568BFA] text-white">
+            className="p-2 lg:p-4 h-64 rounded-xl flex flex-col gap-6 justify-center items-center bg-[#568BFA] text-white"
+            data-aos="flip-right"
+            >
             <div>
   
               

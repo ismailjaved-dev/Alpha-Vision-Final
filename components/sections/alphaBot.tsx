@@ -58,12 +58,12 @@ const AlphaBot = () => {
                 <Image src='/bot_light.png' className='glowAnimation' height={120} width={355} alt='Alpha Bot' unoptimized/>
             </div>
         </div>
-        <div className="w-full max-w-[43.75rem] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-24  p-5">
+        <div className="w-full max-w-[50rem] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-24 p-5">
             {
                 data.links.map((item: any, index: number) => (
-                    <Button key={index}>
+                    <button key={index} className='w-full h-16 rounded-[0.625rem] secondaryBtn'>
                         {item.label}
-                    </Button>
+                    </button>
                 ))
             }
         </div>

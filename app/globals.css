@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+    overflow-x: hidden;
+}
 
 
 .last-link {
@@ -19,12 +21,14 @@
 
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(-5%);
+        transform: translateY(-10%);
     }
     50% {
-        transform: translateY(5%);
+        transform: translateY(10%) ;
     }
 }
+
+
 
 .textArea {
     order: 2;
@@ -113,7 +117,7 @@
 @keyframes popUpText{
     0%{
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px) ;
     }
     100%{
         opacity: 1;
@@ -156,4 +160,52 @@ h2,h3,h4,h5,h6{
     .aboutImages{
       height: 20rem !important;
     }
+}
+
+
+.secondaryBtn{
+    background: linear-gradient(#231349, #231349) padding-box, linear-gradient(320deg, #568bfa -10%, rgba(58, 100, 250, 0) 20%, rgba(24, 195, 250, 0) 30%, #568bfa 50%, rgba(58, 100, 250, 0) 70%, rgba(24, 195, 250, 0) 80%, #568bfa 110%) border-box;
+    background-size: 200% 200%;
+    border: 2px solid transparent;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+}
+
+.formBtn:hover{
+    background: linear-gradient(90deg, #568bfa, #9435ff) !important;
+    border: 1px solid #9435ff;
+}
+.secondaryBtn:hover{
+    animation: btnAnimation 1s ease;
+}
+
+@keyframes btnAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.swiper-slide{
+    transition: 1s ease;
+    transform: scale(0.8) !important;
+}
+
+.swiper-slide-active{
+    transform: scale(1.1) !important;
 }

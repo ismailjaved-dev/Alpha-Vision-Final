@@ -1,25 +1,33 @@
 'use client'
 
-import React from 'react'
+import React,{useEffect} from 'react'
 import parse from 'html-react-parser';
 import {Button} from './button';
 import {Swiper, SwiperSlide} from 'swiper/react';
 
+
 // Import Swiper styles
 import 'swiper/css';
 import Image from 'next/image';
-
 import {Autoplay} from 'swiper/modules';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SliderBox = ({data}: any) => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000 // Duration in milliseconds
+    });
+  }, []);
+
   return (
     <div className='flex flex-col gap-20 mt-32 mb-36'>
       {
         data.map((item: any, index: number) => (
-          <div
-            className={`w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24  justify-center items-center  ${index % 2 === 0 ? 'reverse' : ''}`}
-            key={index}>
-            <div className='flex flex-col gap-10 textArea'>
+          <div key={index}
+            className={`w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24  justify-center items-center  ${index % 2 === 0 ? 'reverse' : ''}`} >
+            <div className='flex flex-col gap-10 textArea' data-aos={`${index % 2 == 0 ? "fade-right" : "fade-left"}`}>
               <div className='flex flex-col gap-5'>
                 <h2
                   className='text-h4 font-grotesk font-semibold w-full max-w-[30.1875rem] mr-auto leading-tight'>{item.heading}</h2>
@@ -27,7 +35,7 @@ const SliderBox = ({data}: any) => {
               </div>
               <Button variant='rounded' className='w-max md:mr-auto'>Learn More</Button>
             </div>
-            <div className='w-full'>
+            <div className='w-full' data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
               <Swiper
                 spaceBetween={-120}
                 slidesPerView={1.5}

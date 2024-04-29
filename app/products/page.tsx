@@ -8,6 +8,7 @@ const page = () => {
       <Hero heading="Our Product" desc='Home / Product'/>
       <Product/>
       <Footer/>
+
     </div>
   )
 }

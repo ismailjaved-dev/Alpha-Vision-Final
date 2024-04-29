@@ -27,7 +27,9 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
 
         {
           pathname == '/' &&
-            <Button variant='rounded'>Book Now</Button>
+           <>
+            <Button variant='rounded' className='secondaryBtn'>Book Now</Button>
+           </>
         }
 
       </div>

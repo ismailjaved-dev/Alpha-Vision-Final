@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React,{useEffect} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import { Button } from "../ui/button";
 import Image from "next/image";
+
 
 const ProductsContent = () => {
   const data = [
@@ -29,6 +30,9 @@ const ProductsContent = () => {
     },
   ];
 
+
+
+
   return (
     <>
       <div className="w-full max-w-fluid mx-auto text-center p-5 py-24">
@@ -48,7 +52,8 @@ const ProductsContent = () => {
           centeredSlides={true}
           initialSlide={1}
           loop={true}
-          spaceBetween={50}
+          spaceBetween={5}
+          className="p-16"
         >
       
           {

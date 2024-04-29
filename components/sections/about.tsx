@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image";
-import Link from "next/link";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -30,13 +33,22 @@ const data = [
   },
 ];
 
+
 export default function About() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000 // Duration in milliseconds
+    });
+  }, []);
+  
   return (
     <section className="w-full max-w-fluid mx-auto py-24 px-6 space-y-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-y-16 mt-12">
         {data.map((item, index) => (
           <div
             key={index}
+            data-aos="fade-up"
             className={ `${index == 0 ? "p-4 sm:p-8" : "p-4"} flex flex-col gap-4 w-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10  ${
               item.width === "full" ? "lg:col-span-2" : "col-span-1"
             }`}

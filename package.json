@@ -16,6 +16,7 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "aos": "^2.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-autoplay": "^8.0.2",
@@ -32,8 +33,10 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "20.12.7",
     "@types/react": "18.2.75",
+    "@types/react-animate-on-scroll": "^2.1.8",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",

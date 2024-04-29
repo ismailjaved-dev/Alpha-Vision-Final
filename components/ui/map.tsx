@@ -17,15 +17,15 @@ export default function Map() {
     <h3 className="font-bold text-h3 mb-0">Our Locations</h3>
     <div className="flex flex-col lg:flex-row gap-6">
       {locations.map((location,index) => (
-        <Button key={index}
-                variant={currLocation.name == location.name ? "rounded" : "rounded"}
+        <button key={index}
+                // variant={currLocation.name == location.name ? "rounded" : "rounded"}
                 onClick={() => {
                   setCurrLocation(location)
                 }}
-                className="flex gap-5"
+                className="flex gap-5 secondaryBtn rounded-[44px] formBtn"
                 >
                    <Image src={location.icon} width={40} height={40} alt={location.name} priority/>
-                  {location.name}</Button>
+                  {location.name}</button>
       ))}
     </div>
   </div>

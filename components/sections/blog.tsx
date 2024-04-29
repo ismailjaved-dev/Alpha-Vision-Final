@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React,{useEffect} from "react";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 import {
@@ -14,6 +14,9 @@ import {
 import { Arrow } from "@radix-ui/react-select";
 import { CircleX } from "lucide-react";
 import Link from "next/link";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Blog = () => {
   const pathname = usePathname();
@@ -22,6 +25,55 @@ const Blog = () => {
     {
       title:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
       image: "/blog.png",
       link: "/",
@@ -29,62 +81,20 @@ const Blog = () => {
     {
       title:
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
-      link: "/",
-    },
-    {
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
-      image: "/blog.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
       link: "/",
     },
   ];
 
   const mapData = pathname == "/" ? data.slice(0, 3) : data;
+
+ 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000 // Duration in milliseconds
+    });
+  }, []);
 
   return (
     <div className="w-full max-w-fluid mx-auto py-24 px-5">
@@ -101,7 +111,7 @@ const Blog = () => {
         <>
           {/* <div className="grid md:grid-cols-2 gap-10 my-10 p-5 gradientBg">
             <div className="hidden md:block relative">
-              <Image src={"/blogImg.png"} fill alt="" priority />
+            <Image src={"/blogImg.png"} fill alt="" priority />
             </div>
             <div className="my-auto lg:my-10">
               <h5 className="text-h5 font-bold capitalize mb-5">
@@ -121,11 +131,13 @@ const Blog = () => {
         </>
       )}
 
+  
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-12">
         {mapData.map((item, index) => (
           <div
-            key={index}
             className="p-4 flex flex-col gap-5 w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10"
+            key={index} data-aos="flip-right"
           >
             <div className="h-[15rem] w-full overflow-hidden rounded-xl">
               <Image
@@ -156,8 +168,10 @@ const Blog = () => {
               </AlertDialogContent>
             </AlertDialog>
           </div>
+      
         ))}
       </div>
+    
 
       {pathname == "/" && (
         <div className="flex justify-center my-[5rem]">
