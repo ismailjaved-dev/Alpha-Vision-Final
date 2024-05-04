@@ -3,7 +3,7 @@ import { Button } from './button'
 
 const ServiceCTA = () => {
   return (
-    <div className='w-full max-w-fluid mx-auto mt-20'>
+    <div className='w-full max-w-fluid mx-auto overflow-x-hidden mt-20'>
       <div className="w-full grid md:grid-cols-2 bg-gradient-to-br from-[#231349] to-[#150F22] rounded-xl border-[3px] border-white min-h-80">
         <div className='p-11 h-full flex justify-between flex-col'>
             <div>

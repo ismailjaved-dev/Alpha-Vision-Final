@@ -30,7 +30,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className='w-full max-w-fluid mx-auto my-8 px-5 flex flex-col lg:flex-row gap-10'>
+    <div className='w-full max-w-fluid mx-auto overflow-x-hidden my-8 px-5 flex flex-col lg:flex-row gap-10'>
       <div className=''>
         <Image src={'/logo.svg'} width={200} height={100} priority unoptimized alt='' />
         <p className='my-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum incidunt deserunt.</p>

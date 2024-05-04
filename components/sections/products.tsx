@@ -81,7 +81,7 @@ const Products = () => {
         }
     ]
   return (
-    <div className='w-full max-w-fluid mx-auto px-5'>
+    <div className='w-full max-w-fluid mx-auto overflow-x-hidden px-5'>
         <div className="text-center mx-auto">
             <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
                 Our Products

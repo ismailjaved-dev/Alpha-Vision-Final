@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
   const pathname = usePathname();
 
   return (
-    <div className='w-full h-[34.9375rem] md:h-[44.9375rem] relative z-10 px-5 pt-10 md:pt-0'>
+    <div className={`w-full h-[34.9375rem] relative z-10 px-5 pt-10 md:pt-0 ${pathname =='/' ? "md:h-[44.9375rem]" : "md:h-[35.9375rem]"}`}>
       <div className='w-full h-full flex justify-center items-center flex-col gap-[1.5625rem]'>
         <h1>
           <span
@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
         {
           pathname == '/' &&
            <>
-            <Button variant='rounded' className='secondaryBtn'>Book Now</Button>
+            <button className='primaryBtn'>Book Now</button>
            </>
         }
 

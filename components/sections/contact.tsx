@@ -49,7 +49,7 @@ export default function Contact() {
     });
   }, []);
 
-  return <section className='w-full max-w-fluid mx-auto py-24 px-5 space-y-16'>
+  return <section className='w-full max-w-fluid mx-auto overflow-x-hidden py-24 px-5 space-y-16'>
     <div className="text-center space-y-6">
       <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
         Connect with us now

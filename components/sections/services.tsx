@@ -40,7 +40,7 @@ const Services = () => {
         },
     ]
   return (
-    <div className='w-full max-w-fluid mx-auto py-32 px-5'>
+    <div className='w-full max-w-fluid mx-auto overflow-x-hidden py-32 px-5'>
         <div className="text-center">
             <h2 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold'> Our Services</h2>
             <p className='text-md text-gray'>

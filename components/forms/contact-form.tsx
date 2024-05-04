@@ -123,7 +123,7 @@ export default function ContactForm() {
           )}
         />
         <div className="col-span-2 mt-8 flex justify-center">
-          <Button type="submit">Submit</Button>
+          <button className="primaryBtn" type="submit">Submit</button>
         </div>
       </form>
     </Form>

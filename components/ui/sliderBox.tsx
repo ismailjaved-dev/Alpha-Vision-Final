@@ -33,7 +33,7 @@ const SliderBox = ({data}: any) => {
                   className='text-h4 font-grotesk font-semibold w-full max-w-[30.1875rem] mr-auto leading-tight'>{item.heading}</h2>
                 <p className='hidden md:block text-md text-gray'>{parse(item.desc)}</p>
               </div>
-              <Button variant='rounded' className='w-max md:mr-auto'>Learn More</Button>
+              <button  className='primaryBtn w-max md:mr-auto'>Learn More</button>
             </div>
             <div className='w-full' data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
               <Swiper

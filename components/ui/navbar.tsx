@@ -40,7 +40,7 @@ const Navbar = () => {
   ];
   return (
     <div className="absolute w-full top-0 left-0 z-[99999] pt-12">
-      <div className="w-full max-w-fluid mx-auto flex justify-between items-center gap-4 px-5 ">
+      <div className="w-full max-w-fluid mx-auto overflow-x-hidden flex justify-between items-center gap-4 px-5 ">
         <Link href={"/"}>
           <Image
             src="/logo.svg"
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <Link href={"/contact"}>
           {" "}
-          <Button className=" hidden lg:flex">Book an Appointment</Button>
+          <button className="!hidden lg:!flex primaryBtn">Book an Appointment</button>
         </Link>
         <div className="flex lg:hidden">
           <Sheet>

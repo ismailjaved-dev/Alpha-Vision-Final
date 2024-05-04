@@ -43,7 +43,7 @@ const AlphaBot = () => {
         ]
     }
   return (
-    <div className='w-full max-w-fluid mx-auto'>
+    <div className='w-full max-w-fluid mx-auto overflow-x-hidden'>
         <div className="text-center max-w-[51.375rem] mx-auto p-5">
             <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 leading-[60px] font-grotesk font-semibold">
                 {data.heading}

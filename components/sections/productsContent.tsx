@@ -35,7 +35,7 @@ const ProductsContent = () => {
 
   return (
     <>
-      <div className="w-full max-w-fluid mx-auto text-center p-5 py-24">
+      <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5 py-24">
         <div className="text-center flex flex-wrap justify-center">
           <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize max-w-[56.25rem] leading-normal">
             we have amazing product for your company needs

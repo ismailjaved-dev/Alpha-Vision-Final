@@ -45,7 +45,7 @@ interface ServiceProps {
     
 
   return (
-    <div className="w-full max-w-fluid mx-auto text-center p-5 py-32">
+    <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5 py-32">
       <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
         We offer various services
       </h2>
@@ -81,7 +81,7 @@ interface ServiceProps {
                         <div className="flex flex-col my-0 lg:my-10 gap-8 items-start textArea" data-aos={`${index % 2 == 0 ? "fade-right" : "fade-left"}`}>
                             <h4 className="text-h4 font-semibold mb-0">{res.title}</h4>
                             <p>{res.desc}</p>
-                            <Button>Contact Us</Button>
+                            <button className="primaryBtn">Contact Us</button>
                         </div>
                         <div className="h-[25rem] w-full relative" data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
                             <Image src={res.img} fill priority alt=""/>

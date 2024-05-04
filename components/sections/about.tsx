@@ -43,7 +43,7 @@ export default function About() {
   }, []);
   
   return (
-    <section className="w-full max-w-fluid mx-auto py-24 px-6 space-y-24">
+    <section className="w-full max-w-fluid mx-auto overflow-x-hidden py-24 px-6 space-y-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-y-16 mt-12">
         {data.map((item, index) => (
           <div
