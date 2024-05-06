@@ -60,7 +60,7 @@ export default function About() {
                 height={100}
                 width={100}
                 unoptimized
-                className={`object-cover h-full w-full ${index == 0 ? "aboutImages" : "aboutImagesActive"}`}
+                className={`object-cover h-full w-full  ${index == 0 ? "aboutImages" : "aboutImagesActive border border-[#568BFA]"}`}
               />
           
             <div className="flex flex-col gap-4">
@@ -69,8 +69,8 @@ export default function About() {
             </div>
             <h2
               className={`${
-                index == 0 ? "text-h5 left-4 sm:text-h4 sm:left-8" : "text-h5 left-4"
-              } rounded-tl-lg rounded-br-lg absolute top-4 left-4 py-2 px-4 bg-[#231349] font-bold`}
+                index == 0 ? "text-h5 left-4 sm:text-h4 sm:left-8" : "text-h5 left-4 border !border-[#568BFA]"
+              } rounded-tl-lg rounded-br-lg absolute top-4 left-4 py-2 px-4 bg-[#231349] font-bold border-t-0 border-l-0 !rounded-t-[0px] !rounded-l-[0px] `}
             >
               {item.tag}
             </h2>

@@ -183,7 +183,7 @@ h2,h3,h4,h5,h6{
 }
 
 .primaryBtn::before{
-    background-image: linear-gradient(to bottom, #4a90cb 0, #4a90cb 4px, transparent 4px, transparent 42px, #4a90cb 42px, #4a90cb 45px), url("https://i.imgur.com/nPEIV1i.png"), url("https://i.imgur.com/nPEIV1i.png"), url('https://i.imgur.com/oGc3o2w.png');
+    background-image: linear-gradient(to bottom, #568BFA 0, #568BFA 4px, transparent 4px, transparent 42px, #568BFA 42px, #568BFA 45px), url("https://i.imgur.com/sRJB89C.png"), url("https://i.imgur.com/sRJB89C.png"), url('https://i.imgur.com/olRglkx.png');
     background-position: left center, top -6px right -3px, bottom -6px right -3px, top left -3px;
     background-repeat: no-repeat;
     background-size: 100%, 10px 40%, 10px 40%, 10px 100%;
@@ -220,7 +220,7 @@ h2,h3,h4,h5,h6{
 }
 
 .primaryBtn::after{
-    background-color: #4a90cb;
+    background-color: #568BFA;
     border: 1px solid transparent;
     content: '';
     display: block;

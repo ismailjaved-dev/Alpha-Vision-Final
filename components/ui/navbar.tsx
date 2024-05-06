@@ -44,8 +44,8 @@ const Navbar = () => {
         <Link href={"/"}>
           <Image
             src="/logo.svg"
-            height={50}
-            width={177}
+            height={55}
+            width={200}
             alt="Alpha Vision"
             className="h-[50px] w-max"
           />
