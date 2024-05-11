@@ -3,7 +3,8 @@ import React,{useEffect} from "react";
 import ContactForm from "@/components/forms/contact-form"
 import Map from "@/components/ui/map";
 import Image from "next/image";
-import { InstagramIcon, FacebookIcon, LinkedinIcon } from 'lucide-react'
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaLinkedin,FaFacebook, FaInstagram } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -25,9 +26,10 @@ const cardsData = [
     Icon: '/socialIcon.png',
     content: <>
       <div className="flex gap-5">
-      <InstagramIcon className='cursor-pointer transition hover:text-gray' />
-      <FacebookIcon className='cursor-pointer transition hover:text-gray' />
-      <LinkedinIcon className='cursor-pointer transition hover:text-gray' />
+      <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+      <FaWhatsapp size={25} className=' cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]'/>
+      <FaInstagram size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+      <FaFacebook size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
       </div>
      
     </>

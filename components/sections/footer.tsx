@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import { InstagramIcon, FacebookIcon, LinkedinIcon } from 'lucide-react'
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaLinkedin,FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -34,10 +35,11 @@ const Footer = () => {
       <div className=''>
         <Image src={'/logo.svg'} width={200} height={100} priority unoptimized alt='' />
         <p className='my-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum incidunt deserunt.</p>
-        <div className='flex gap-5 text-gray'>
-          <InstagramIcon className='cursor-pointer' />
-          <FacebookIcon className='cursor-pointer' />
-          <LinkedinIcon className='cursor-pointer' />
+        <div className='flex gap-5'>
+        <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+      <FaWhatsapp size={25} className=' cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]'/>
+      <FaInstagram size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+      <FaFacebook size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
         </div>
       </div>
       <div className='flex flex-col sm:flex-row justify-between gap-5 w-full lg:mt-3'>

@@ -81,7 +81,9 @@ interface ServiceProps {
                         <div className="flex flex-col my-0 lg:my-10 gap-8 items-start textArea" data-aos={`${index % 2 == 0 ? "fade-right" : "fade-left"}`}>
                             <h4 className="text-h4 font-semibold mb-0">{res.title}</h4>
                             <p>{res.desc}</p>
+                            <Link href={'/contact'}>
                             <button className="primaryBtn">Contact Us</button>
+                            </Link>
                         </div>
                         <div className="h-[25rem] w-full relative" data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
                             <Image src={res.img} fill priority alt=""/>

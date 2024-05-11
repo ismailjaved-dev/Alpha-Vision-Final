@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React,{useEffect} from "react";
+import React,{useState, useEffect} from "react";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 import {
@@ -20,6 +20,10 @@ import 'aos/dist/aos.css';
 
 const Blog = () => {
   const pathname = usePathname();
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const data = [
     {
@@ -85,9 +89,165 @@ const Blog = () => {
         image: "/blog.png",
       link: "/",
     },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+      {
+        title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+        link: "/",
+      },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+      image: "/blog.png",
+      link: "/",
+    },
+    {
+      title:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque",
+        desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque.",
+        image: "/blog.png",
+      link: "/",
+    },
   ];
 
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+
   const mapData = pathname == "/" ? data.slice(0, 3) : data;
+
+
+  const currentItems = mapData.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = searchTerm == "" ? Math.ceil(mapData.length / itemsPerPage) :
+    Math.ceil(mapData.length / itemsPerPage);
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+  };
+
+
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(
+        <button
+          key={i}
+          onClick={() => handlePageChange(i)}
+          // className={currentPage === i ? "btn btn-primary" : "btn btn-seconaday"}
+          className={`block w-[10px] h-[10px] rounded-full ${ currentPage == i ? "bg-primary" : "bg-[#3E3E3E]"}`}
+          >
+          
+        </button>
+      );
+    }
+    return pageNumbers;
+  };
 
  
   useEffect(() => {
@@ -134,7 +294,7 @@ const Blog = () => {
   
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-12">
-        {mapData.map((item, index) => (
+        {currentItems.map((item, index) => (
           <div
             className="p-4 flex flex-col gap-5 w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10"
             key={index} data-aos="flip-right"
@@ -171,6 +331,14 @@ const Blog = () => {
       
         ))}
       </div>
+       
+
+       {
+        pathname == '/blog' &&
+        <div className="flex justify-center gap-2 my-6">
+          {renderPageNumbers()}
+       </div>
+       }
     
 
       {pathname == "/" && (

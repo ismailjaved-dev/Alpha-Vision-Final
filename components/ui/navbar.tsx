@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Link href={"/contact"}>
+        <Link href={"/contact"} className="px-2">
           {" "}
           <button className="!hidden lg:!flex primaryBtn">Book an Appointment</button>
         </Link>

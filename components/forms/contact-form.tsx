@@ -49,8 +49,8 @@ export default function ContactForm() {
   }
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-2 gap-4">
+    <Form {...form} >
+      <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-2 gap-4" id="contact-us">
         <FormField
           control={form.control}
           name="name"
