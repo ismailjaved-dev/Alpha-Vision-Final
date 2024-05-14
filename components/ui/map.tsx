@@ -4,7 +4,7 @@ import {useState} from "react";
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
 
-const locations = [{icon:"/malFlag.png", name : "Malaysia"},{icon:"/IndFlag.png", name : "Indonesia"}]
+const locations = [{icon:"/malFlag.png", name : "Malaysia"},{icon:"/indFlag.png", name : "Indonesia"}]
 
 export default function Map() {
   const [currLocation, setCurrLocation] = useState(locations[0]);
