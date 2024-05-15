@@ -1,10 +1,144 @@
 import React from 'react'
 
 const Clients = () => {
+    // const marqueeX = [
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client1.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client2.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client3.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client4.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client5.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client6.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client7.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client8.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client9.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client10.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client11.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client12.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client13.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client14.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client15.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client16.png'
+    //     },
+    // ]
+
+    // const marqueeX2 = [
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client17.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client18.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client19.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client20.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client21.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client22.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client23.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client24.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client25.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client26.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client27.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client28.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client29.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client30.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client31.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client32.png'
+    //     }
+    // ]
+
     const marqueeX = [
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client.png'
         },
         {
             name: 'Marquee X',
@@ -86,6 +220,7 @@ const Clients = () => {
             img: '/marquee.png'
         }
     ]
+
   return (
     <div className=''>
         <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5">
