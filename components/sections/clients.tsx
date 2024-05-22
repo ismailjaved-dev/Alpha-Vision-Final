@@ -1,225 +1,225 @@
 import React from 'react'
 
 const Clients = () => {
-    // const marqueeX = [
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client1.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client2.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client3.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client4.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client5.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client6.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client7.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client8.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client9.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client10.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client11.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client12.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client13.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client14.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client15.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client16.png'
-    //     },
-    // ]
-
-    // const marqueeX2 = [
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client17.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client18.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client19.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client20.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client21.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client22.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client23.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client24.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client25.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client26.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client27.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client28.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client29.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client30.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client31.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client32.png'
-    //     }
-    // ]
-
     const marqueeX = [
         {
             name: 'Marquee X',
-            img: '/client.png'
+            img: '/client1.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client2.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client3.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client4.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client5.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client6.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client7.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client8.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client9.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
-        }
+            img: '/client10.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client11.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client12.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client13.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client14.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client15.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client16.png'
+        },
     ]
 
     const marqueeX2 = [
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client17.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client18.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client19.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client20.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client21.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client22.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client23.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client24.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client25.png'
         },
         {
             name: 'Marquee X',
-            img: '/marquee.png'
+            img: '/client26.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client27.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client28.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client29.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client30.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client31.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client32.png'
         }
     ]
+
+    // const marqueeX = [
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/client.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     }
+    // ]
+
+    // const marqueeX2 = [
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     },
+    //     {
+    //         name: 'Marquee X',
+    //         img: '/marquee.png'
+    //     }
+    // ]
 
   return (
     <div className=''>
@@ -262,7 +262,7 @@ const Clients = () => {
                         marqueeX2.map((item, index) => {
                             return (
                                 <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt="" />
+                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt="" />
                                 </div>
                             )
                         })
@@ -273,7 +273,7 @@ const Clients = () => {
                         marqueeX2.map((item, index) => {
                             return (
                                 <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt="" />
+                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt="" />
                                 </div>
                             )
                         })
