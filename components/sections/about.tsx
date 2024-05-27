@@ -3,6 +3,7 @@ import Image from "next/image";
 import React,{useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { LinkedinIcon } from "lucide-react";
 
 const data = [
   {
@@ -41,6 +42,8 @@ export default function About() {
       duration: 1000 // Duration in milliseconds
     });
   }, []);
+
+  const activeCard  = true
   
   return (
     <section className="w-full max-w-fluid mx-auto overflow-x-hidden py-24 px-6 space-y-24">
@@ -85,6 +88,263 @@ export default function About() {
           <p className="text-md md:text-lg text-gray">
             Lorem ipsum dolor sit amet consectetur adipiscing elit
           </p>
+
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+    
+
+
+
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon />
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+       
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon />
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon />
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon />
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon />
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+            </div>
+
         </div>
       </div>
     </section>
