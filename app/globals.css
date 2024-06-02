@@ -260,11 +260,26 @@ h2,h3,h4,h5,h6{
     }
 }
 
+.product-slide{
+    transition: 1s ease;
+    transform: scale(0.8) !important;
+}
+
+.product-slide-active{
+    transform: scale(1.1) !important;
+}
+
 .swiper-slide{
     transition: 1s ease;
     transform: scale(0.8) !important;
 }
 
 .swiper-slide-active{
-    transform: scale(1.1) !important;
+    transform: scale(1) !important;
+}
+
+
+.productInnerPage{
+    background: rgb(35,19,73);
+background: linear-gradient(140deg, rgba(35,19,73,1) 0%, rgba(21,15,34,1) 100%);
 }

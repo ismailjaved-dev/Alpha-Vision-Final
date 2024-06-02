@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const ProductsContent = () => {
@@ -14,19 +15,23 @@ const ProductsContent = () => {
       title: "Crypto Curency1",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
+      pathName:"/products/crypto-curency1",
     },
      {
       title: "Crypto Curency2",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
+      pathName:"/products/crypto-curency2",
     }, {
       title: "Crypto Curency3",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
+      pathName:"/products/crypto-curency3",
     }, {
       title: "Crypto Curency4",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
+      pathName:"/products/crypto-curency4",
     },
   ];
 
@@ -65,7 +70,9 @@ const ProductsContent = () => {
                      <p className={`max-w-[25rem]`}>{res.desc}</p>
                      </div>
                   <Image src={res.img} fill alt="" className={`!left-[40%] !top-[35%]`}/>
-                     <Button className="mt-[10rem]">Detail Product </Button>
+                   <Link href={res.pathName} target="_blank">
+                   <Button className="mt-[10rem]">Detail Product </Button>
+                   </Link>
                </SwiperSlide>
               )
             })

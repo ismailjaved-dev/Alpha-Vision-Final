@@ -7,6 +7,7 @@ import { Menu } from "lucide-react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 import {
   Sheet,
@@ -19,6 +20,9 @@ import {
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+
+  const pathName = usePathname().split('/')
+
 
   const data = [
     {
@@ -39,6 +43,9 @@ const Navbar = () => {
     },
   ];
   return (
+    <>
+     {
+      pathName.length == 3 ? "" : 
     <div className="absolute w-full top-0 left-0 z-[99999] pt-12">
       <div className="w-full max-w-fluid mx-auto overflow-x-hidden flex justify-between items-center gap-4 px-5 ">
         <Link href={"/"}>
@@ -102,6 +109,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+     }
+    </>
   );
 };
 

@@ -44,7 +44,7 @@ const SliderBox = ({data}: any) => {
                 loop={true}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                className='animate-bounce duration-2500'
+                className='animate-bounce duration-2500 product-slide'
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
