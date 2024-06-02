@@ -7,7 +7,7 @@ import {Autoplay} from 'swiper/modules';
 import 'swiper/css';
 
 
-const page = () => {
+const Page = () => {
 
 
   const pathName = usePathname().split('/')[2]
@@ -158,4 +158,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
