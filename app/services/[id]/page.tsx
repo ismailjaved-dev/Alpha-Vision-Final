@@ -4,6 +4,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 import ServicesContent from '@/components/sections/servicesContent'
 import Footer from '@/components/sections/footer'
+import Navbar from '@/components/ui/navbar'
 
 const Page = () => {
 
@@ -12,6 +13,7 @@ const Page = () => {
 
   return (
    <>
+   <Navbar />
     <Hero heading="Services" desc="Home / Services"/>
     <ServicesContent pathname={pathname}/>
     <Footer />
