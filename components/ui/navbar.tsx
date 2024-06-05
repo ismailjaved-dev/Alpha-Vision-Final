@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Button } from "./button";
 import Link from "next/link";
 import { Menu } from "lucide-react";
@@ -20,6 +20,7 @@ import {
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+  const [show, setShow] = useState(false);
 
   const pathName = usePathname().split('/')
 
@@ -42,11 +43,24 @@ const Navbar = () => {
       path: "/blog",
     },
   ];
+
+  useEffect(() => {
+  setShow(true)
+
+   if(pathName[1] == 'products' && pathName.length == 3){
+    setShow(false)
+   }
+
+  }, [pathName])
+
+
+
   return (
     <>
-     {
-      pathName.length == 3 ? "" : 
-    <div className="absolute w-full top-0 left-0 z-[99999] pt-12">
+  
+    {
+      show ? 
+      <div className="absolute w-full top-0 left-0 z-[99999] pt-12">
       <div className="w-full max-w-fluid mx-auto overflow-x-hidden flex justify-between items-center gap-4 px-5 ">
         <Link href={"/"}>
           <Image
@@ -109,7 +123,10 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-     }
+      :
+      ""
+    }
+     
     </>
   );
 };
