@@ -72,10 +72,10 @@ const Navbar = () => {
         </Link>
         <div className="flex gap-6 items-start">
           {data.map((item, index) => (
-            <div className="flex flex-col justify-center items-center gap-2">
+            <div className="flex flex-col justify-center items-center gap-2" key={index}>
             <Link
               href={item.path}
-              key={index}
+              
               className={`text-white text-md hidden lg:flex  ${pathName[1] == item.path.split('/')[1] && " font-bold"}`}
             >
               {item.label}
