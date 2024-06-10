@@ -23,7 +23,7 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           workImg:"/product1work.svg",
-          pathname:"crypto-curency1"
+          pathname:"crypto-currency-transaction-system"
         },
         {
           title: "Crypto Curency2",
@@ -34,7 +34,7 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           workImg:"/product1work.svg",
-          pathname:"crypto-curency2"
+          pathname:"e-commerce-management-system"
         },
         {
           title: "Crypto Curency3",
@@ -45,7 +45,7 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           workImg:"/product1work.svg",
-          pathname:"crypto-curency3"
+          pathname:"e-leave-management-system"
         },
         {
           title: "Crypto Curency4",
@@ -56,7 +56,7 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           workImg:"/product1work.svg",
-          pathname:"crypto-curency4"
+          pathname:"inventory-management-system"
         },
       ];
 

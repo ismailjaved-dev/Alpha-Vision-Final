@@ -48,27 +48,19 @@ const Clients = () => {
         },
         {
             name: 'Marquee X',
-            img: '/client12.png'
-        },
-        {
-            name: 'Marquee X',
             img: '/client13.png'
         },
         {
             name: 'Marquee X',
-            img: '/client14.png'
-        },
-        {
-            name: 'Marquee X',
-            img: '/client15.png'
-        },
-        {
-            name: 'Marquee X',
-            img: '/client16.png'
+            img: '/client22.png'
         },
     ]
 
     const marqueeX2 = [
+        {
+            name: 'Marquee X',
+            img: '/client15.png'
+        },
         {
             name: 'Marquee X',
             img: '/client17.png'
@@ -91,10 +83,6 @@ const Clients = () => {
         },
         {
             name: 'Marquee X',
-            img: '/client22.png'
-        },
-        {
-            name: 'Marquee X',
             img: '/client23.png'
         },
         {
@@ -104,10 +92,6 @@ const Clients = () => {
         {
             name: 'Marquee X',
             img: '/client25.png'
-        },
-        {
-            name: 'Marquee X',
-            img: '/client26.png'
         },
         {
             name: 'Marquee X',
@@ -132,7 +116,15 @@ const Clients = () => {
         {
             name: 'Marquee X',
             img: '/client32.png'
-        }
+        },
+        {
+            name: 'Marquee X',
+            img: '/client14.png'
+        },
+        {
+            name: 'Marquee X',
+            img: '/client16.png'
+        },
     ]
 
     // const marqueeX = [
@@ -237,8 +229,8 @@ const Clients = () => {
                     {
                         marqueeX.map((item, index) => {
                             return (
-                                <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt="" />
+                                <div key={index} className="py-3 px-8 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
+                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt={item.img} />
                                 </div>
                             )
                         })
@@ -248,8 +240,8 @@ const Clients = () => {
                     {
                         marqueeX.map((item, index) => {
                             return (
-                                <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt="" />
+                                <div key={index} className="py-3 px-8 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
+                                    <img className="h-full max-h-[8.75rem] w-auto" src={item.img} alt={item.img} />
                                 </div>
                             )
                         })
@@ -262,7 +254,7 @@ const Clients = () => {
                         marqueeX2.map((item, index) => {
                             return (
                                 <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt="" />
+                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt={item.img} />
                                 </div>
                             )
                         })
@@ -273,7 +265,7 @@ const Clients = () => {
                         marqueeX2.map((item, index) => {
                             return (
                                 <div key={index} className="p-3 flex justify-center min-h-[13.75rem] items-center w-full h-full relative bg-gradient-to-br from-[#568BFA] via-[#0D0D0D] to-[#568BFA] z-10 rounded-xl before:bg-gradient-to-br before:from-[#231349] before:to-[#150F22] before:rounded-xl before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:w-[calc(100%-2px)] before:h-[calc(100%-2px)] before:-z-10">
-                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt="" />
+                                    <img className="h-full max-h-[8.75rem] w-[280px] aspect-video object-contain" src={item.img} alt={item.img} />
                                 </div>
                             )
                         })

@@ -108,7 +108,7 @@ export default function About() {
                     Ipsum
                     </p>
                     <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
-                     <LinkedinIcon />
+                     <LinkedinIcon className=" cursor-pointer"/>
                     </p>
                   </div>
                   {/* <div className="mt-5">
@@ -158,7 +158,7 @@ export default function About() {
                     Ipsum
                     </p>
                     <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
-                     <LinkedinIcon />
+                     <LinkedinIcon className=" cursor-pointer"/>
                     </p>
                   </div>
                   {/* <div className="mt-5">
@@ -207,57 +207,7 @@ export default function About() {
                     Ipsum
                     </p>
                     <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
-                     <LinkedinIcon />
-                    </p>
-                  </div>
-                  {/* <div className="mt-5">
-                    <h4
-                      className={`text-h4 leading-[1] ${
-                        activeCard && "text-white"
-                      }`}
-                    >
-                    asd
-                    </h4>
-                    <p
-                      className={`text-sm ${
-                        activeCard ? "text-white/50" : " text-grayText"
-                      }`}
-                    >
-                      Points
-                    </p>
-                  </div> */}
-                  <p
-                    className={`text-left text-lg font-bold ${
-                      activeCard && "text-white"
-                    }`}
-                  >
-                   Lorem
-                    <br />
-                    Ipsum
-                  </p>
-                  <Image
-                    src={'/person.svg'}
-                    alt={"res.fullName"}
-                    fill
-                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
-                  />
-                </div>
-
-
-                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
-                >
-                  <div className="flex justify-between">
-                    <p
-                      className={`text-sm ${
-                        activeCard ? "text-white/50" : " text-grayText"
-                      }`}
-                    >
-                     Lorem 
-                      <br />
-                    Ipsum
-                    </p>
-                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
-                     <LinkedinIcon />
+                     <LinkedinIcon className=" cursor-pointer"/>
                     </p>
                   </div>
                   {/* <div className="mt-5">
@@ -307,7 +257,57 @@ export default function About() {
                     Ipsum
                     </p>
                     <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
-                     <LinkedinIcon />
+                     <LinkedinIcon className=" cursor-pointer"/>
+                    </p>
+                  </div>
+                  {/* <div className="mt-5">
+                    <h4
+                      className={`text-h4 leading-[1] ${
+                        activeCard && "text-white"
+                      }`}
+                    >
+                    asd
+                    </h4>
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                      Points
+                    </p>
+                  </div> */}
+                  <p
+                    className={`text-left text-lg font-bold ${
+                      activeCard && "text-white"
+                    }`}
+                  >
+                   Lorem
+                    <br />
+                    Ipsum
+                  </p>
+                  <Image
+                    src={'/person.svg'}
+                    alt={"res.fullName"}
+                    fill
+                    className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                  />
+                </div>
+
+
+                <div className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
+                >
+                  <div className="flex justify-between">
+                    <p
+                      className={`text-sm ${
+                        activeCard ? "text-white/50" : " text-grayText"
+                      }`}
+                    >
+                     Lorem 
+                      <br />
+                    Ipsum
+                    </p>
+                    <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
+                     <LinkedinIcon className=" cursor-pointer"/>
                     </p>
                   </div>
                   {/* <div className="mt-5">

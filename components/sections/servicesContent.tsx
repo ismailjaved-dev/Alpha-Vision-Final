@@ -127,8 +127,8 @@ interface ServiceProps {
 
     <div className="mt-16">
         {data[0].data.map((res:any,index:number) => (
-            <div key={index} className={`grid md:grid-cols-2 gap-8 md:gap-16 text-start my-16 ${index % 2 === 0 ? 'reverse' : ''}`}>
-                <div className="flex flex-col my-0 lg:my-10 gap-8 items-start textArea" data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}>
+            <div key={index} className={`grid items-center md:grid-cols-2 gap-8 md:gap-16 text-start my-16 ${index % 2 === 0 ? 'reverse' : ''}`}>
+                <div className="flex flex-col my-0 gap-8 items-start textArea" data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}>
                     <h4 className="text-h4 font-semibold mb-0">{res.title}</h4>
                     <p>{res.desc}</p>
                     <Link href={'/contact'}>

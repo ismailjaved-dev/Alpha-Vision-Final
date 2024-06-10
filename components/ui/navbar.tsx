@@ -54,7 +54,6 @@ const Navbar = () => {
   }, [pathName])
 
 
-
   return (
     <>
   
@@ -71,15 +70,23 @@ const Navbar = () => {
             className="h-[50px] w-max"
           />
         </Link>
-        <div className="flex gap-6">
+        <div className="flex gap-6 items-start">
           {data.map((item, index) => (
+            <div className="flex flex-col justify-center items-center gap-2">
             <Link
               href={item.path}
               key={index}
-              className="text-white text-md hidden lg:flex"
+              className={`text-white text-md hidden lg:flex  ${pathName[1] == item.path.split('/')[1] && " font-bold"}`}
             >
               {item.label}
             </Link>
+             
+              
+                 {
+                 pathName[1] == item.path.split('/')[1] && <div className="hidden h-1 w-10 rounded-lg bg-white lg:block "></div>}
+              
+
+            </div>
           ))}
         </div>
         <Link href={"/contact"} className="px-2">

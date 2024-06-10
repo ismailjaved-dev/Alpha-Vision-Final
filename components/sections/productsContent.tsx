@@ -12,26 +12,26 @@ import Link from "next/link";
 const ProductsContent = () => {
   const data = [
     {
-      title: "Crypto Curency1",
+      title: "Crypto Currency Transaction System",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
-      pathName:"/products/crypto-curency1",
+      pathName:"/products/crypto-currency-transaction-system",
     },
      {
-      title: "Crypto Curency2",
+      title: "E-Commerce Management System",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
-      pathName:"/products/crypto-curency2",
+      pathName:"/products/e-commerce-management-system",
     }, {
-      title: "Crypto Curency3",
+      title: "E-Leave Management System",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
-      pathName:"/products/crypto-curency3",
+      pathName:"/products/e-leave-management-system",
     }, {
-      title: "Crypto Curency4",
+      title: "Inventory Management System",
       desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
       img:"/productImg.png",
-      pathName:"/products/crypto-curency4",
+      pathName:"/products/inventory-management-system",
     },
   ];
 
@@ -66,7 +66,7 @@ const ProductsContent = () => {
               return(
                 <SwiperSlide key={index} className="gradientBg py-10 px-16 min-h-[35rem] overflow-hidden ">
                      <div>
-                     <h1 className="text-h1 font-bold">{res.title}</h1>
+                     <h1 className="text-h2 font-bold">{res.title}</h1>
                      <p className={`max-w-[25rem]`}>{res.desc}</p>
                      </div>
                   <Image src={res.img} fill alt="" className={`!left-[40%] !top-[35%]`}/>
