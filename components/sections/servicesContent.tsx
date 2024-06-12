@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -38,6 +37,8 @@ interface ServiceProps {
         {title: 'IT Consulting', link:"it-consulting"},
     ]
 
+
+    console.log(pathname)
 
     const serviceContent = [
        {
@@ -80,7 +81,46 @@ interface ServiceProps {
           {title:"Corporate Branding",desc:"At our tech company, we specialize in strategic Corporate Branding that sets your business apart in the digital landscape. Our services encompass brand identity creation, rebranding for established companies, and defining compelling brand messaging and positioning. We collaborate closely with our clients to craft a unique brand strategy, ensuring consistency across all touchpoints. From designing captivating logos to formulating comprehensive brand guidelines, we empower tech companies to leave a lasting impression on their audience. Let us elevate your brand presence and drive meaningful connections in the ever-evolving technology sector.",img:'/servicesImg.png'},   
           {title:"Content Writing",desc:"We specialize in crafting compelling content that resonates with your audience. Our Content Writing services cover a wide spectrum, including blog posts, white papers, case studies, and website copy. Our team of experienced writers understands the intricacies of the tech industry, translating complex concepts into clear, engaging content. Whether you need SEO-optimized articles or thought leadership pieces, we’re here to elevate your brand’s voice and drive meaningful connections. Let us weave words that captivate, inform, and inspire in the ever-evolving digital landscape.",img:'/servicesImg.png'},   
         ]
-        }
+        },
+        {
+          serviceName:"networking",
+           data:[
+            {title:"Digital Marketing",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/Network1.png'},
+            {title:"Search Engine Optimization",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/Network2.jpg'},
+            {title:"Corporate Branding",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/Network3.jpg'},
+            {title:"Pay-Per-Click (PPC)",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/Network4.jpg'},
+       
+           ]
+         },
+         {
+          serviceName:"data-recovery",
+           data:[
+            {title:"Digital Marketing",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/data1.jpg'},
+            {title:"Search Engine Optimization",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/data2.jpg'},
+            {title:"Corporate Branding",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/data3.jpg'},
+            {title:"Pay-Per-Click (PPC)",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/data4.jpg'},
+            {title:"Content Writing",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/data5.jpg'},
+           ]
+         },
+         {
+          serviceName:"security",
+           data:[
+            {title:"Digital Marketing",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/security1.jpg'},
+            {title:"Search Engine Optimization",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/security2.jpg'},
+            {title:"Corporate Branding",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/security3.jpg'},
+            {title:"Pay-Per-Click (PPC)",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/security4.jpg'},      
+           ]
+         },
+         {
+          serviceName:"it-consulting",
+           data:[
+            {title:"Digital Marketing",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/it1.jpg'},
+            {title:"Search Engine Optimization",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/it2.jpg'},
+            {title:"Corporate Branding",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/it3.jpg'},
+            {title:"Pay-Per-Click (PPC)",desc:"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.",img:'/it4.jpg'},      
+           ]
+         },
+
     ]
 
     useEffect(() => {

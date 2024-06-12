@@ -51,27 +51,41 @@ const ProductsContent = () => {
         </div>
       </div>
 
-      <div className="w-full mb-24">
+      <div className="w-full mb-24 px-5">
         <Swiper
-          slidesPerView={1.8}
+         
           centeredSlides={true}
           initialSlide={1}
           loop={true}
           spaceBetween={5}
           className="p-16"
+          breakpoints={{
+            1000: {
+              slidesPerView: 1.3,
+              spaceBetween: 10,
+            },
+            1200: {
+              slidesPerView: 1.5,
+              spaceBetween: 30,
+            },
+            1500: {
+              slidesPerView: 1.8,
+              spaceBetween: 50,
+            },
+          }}
         >
       
           {
             data.map((res,index)=>{
               return(
-                <SwiperSlide key={index} className="gradientBg py-10 px-16 min-h-[35rem] overflow-hidden ">
+                <SwiperSlide key={index} className="gradientBg py-10 px-8 sm:px-16 min-h-[35rem] overflow-hidden ">
                      <div>
-                     <h1 className="text-h2 font-bold">{res.title}</h1>
+                     <h1 className="text-h4 md:text-h3 2xl:text-h2 font-bold">{res.title}</h1>
                      <p className={`max-w-[25rem]`}>{res.desc}</p>
                      </div>
-                  <Image src={res.img} fill alt="" className={`!left-[40%] !top-[35%]`}/>
+                  <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[40%] lg:!top-[35%] my-4 lg:my-0`}/>
                    <Link href={res.pathName} target="_blank">
-                   <Button className="mt-[10rem]">Detail Product </Button>
+                   <Button className="mt-8 lg:mt-[10rem]">Detail Product </Button>
                    </Link>
                </SwiperSlide>
               )
