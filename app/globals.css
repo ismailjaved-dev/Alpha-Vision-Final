@@ -13,15 +13,15 @@ body{
 
 
 .last-link {
-    padding: 0;
+ margin-bottom: 2px !important;
 }
 
 .last-link > Button {
-    min-width: calc(100%);
+
 }
 
 .last-link > Button::after {
-    display: none;
+  
 }
 
 @keyframes bounce {

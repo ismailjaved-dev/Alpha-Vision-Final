@@ -48,6 +48,10 @@ const Clients = () => {
         },
         {
             name: 'Marquee X',
+            img: '/client12.png'
+        },
+        {
+            name: 'Marquee X',
             img: '/client13.png'
         },
         {
@@ -127,91 +131,7 @@ const Clients = () => {
         },
     ]
 
-    // const marqueeX = [
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/client.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     }
-    // ]
 
-    // const marqueeX2 = [
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     },
-    //     {
-    //         name: 'Marquee X',
-    //         img: '/marquee.png'
-    //     }
-    // ]
 
   return (
     <div className=''>
