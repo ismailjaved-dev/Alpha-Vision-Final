@@ -15,7 +15,7 @@ const Page = () => {
 
     const data = [
         {
-          title: "Crypto Curency1",
+          title: "Crypto Currency Transaction System",
           desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
           about:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           benefits:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
@@ -26,7 +26,7 @@ const Page = () => {
           pathname:"crypto-currency-transaction-system"
         },
         {
-          title: "Crypto Curency2",
+          title: "E-Commerce Management System",
           desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
           about:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           benefits:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
@@ -37,7 +37,7 @@ const Page = () => {
           pathname:"e-commerce-management-system"
         },
         {
-          title: "Crypto Curency3",
+          title: "E-Leave Management System",
           desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
           about:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           benefits:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
@@ -48,7 +48,7 @@ const Page = () => {
           pathname:"e-leave-management-system"
         },
         {
-          title: "Crypto Curency4",
+          title: "Inventory Management System",
           desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
           about:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
           benefits:"Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
@@ -83,7 +83,7 @@ const Page = () => {
 
 
   return (
-    <section className="overflow-x-hidden py-16 px-6 productInnerPage">
+    <section className="overflow-x-hidden py-16 px-6 productInnerPage pt-28 md:pt-40">
          {
           renderData.map((res,index)=>{
           return(

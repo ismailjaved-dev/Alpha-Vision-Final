@@ -84,7 +84,7 @@ const ProductsContent = () => {
                      <p className={`max-w-[25rem]`}>{res.desc}</p>
                      </div>
                   <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[40%] lg:!top-[35%] my-4 lg:my-0`}/>
-                   <Link href={res.pathName} target="_blank">
+                   <Link href={res.pathName}>
                    <Button className="mt-8 lg:mt-[10rem]">Detail Product </Button>
                    </Link>
                </SwiperSlide>
