@@ -13,10 +13,10 @@ const Page = () => {
 
   return (
    <>
-   <Navbar />
+   {/* <Navbar />
     <Hero heading="Services" desc="Home / Services"/>
     <ServicesContent pathname={pathname}/>
-    <Footer />
+    <Footer /> */}
    </>
   )
 }

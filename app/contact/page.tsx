@@ -5,9 +5,9 @@ import Contact from "@/components/sections/contact";
 const page = () => {
   return (
     <div>
-      <Hero heading="Contact Us" desc='Home / Contact Us'/>
+      {/* <Hero heading="Contact Us" desc='Home / Contact Us'/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }

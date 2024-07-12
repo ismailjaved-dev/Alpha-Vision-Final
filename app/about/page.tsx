@@ -6,9 +6,9 @@ import About from "@/components/sections/about";
 const page = () => {
   return (
     <div>
-      <Hero heading="About Us" desc="Home / About Us" />
+      {/* <Hero heading="About Us" desc="Home / About Us" />
       <About />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

@@ -5,9 +5,9 @@ import Product from "@/components/sections/productsContent";
 const page = () => {
   return (
     <div>
-      <Hero heading="Our Product" desc='Home / Product'/>
+      {/* <Hero heading="Our Product" desc='Home / Product'/>
       <Product/>
-      <Footer/>
+      <Footer/> */}
 
     </div>
   )
