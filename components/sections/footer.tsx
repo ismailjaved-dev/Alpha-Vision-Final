@@ -34,7 +34,7 @@ const Footer = () => {
     <div className='w-full max-w-fluid mx-auto overflow-x-hidden my-8 px-5 flex flex-col lg:flex-row gap-10'>
       <div className=''>
         <Image src={'/logo.svg'} width={200} height={100} priority unoptimized alt='' />
-        <p className='my-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum incidunt deserunt.</p>
+        <p className='my-5'>Leading the Future of Technology with Comprehensive Solutions Across Industries</p>
         <div className='flex gap-5'>
         <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
       <FaWhatsapp size={25} className=' cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]'/>

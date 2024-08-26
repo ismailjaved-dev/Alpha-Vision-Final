@@ -57,7 +57,7 @@ export default function Contact() {
         Connect with us now
       </h2>
       <p className='text-md md:text-lg text-gray'>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit
+      We focus on understanding your needs and creating customized solutions that aligns with your business.
       </p>
     </div>
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -86,7 +86,7 @@ export default function Contact() {
           Get in touch with us
         </h2>
         <p className='text-md md:text-lg text-gray'>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
+        Schedule a free consultation with one of our experts
         </p>
       </div>
       <ContactForm/>

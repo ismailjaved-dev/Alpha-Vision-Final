@@ -87,7 +87,7 @@ const Products = () => {
                 Our Products
             </h2>
             <p className='text-md md:text-lg text-gray'>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
+            Check out our products to see how they can improve your business.
             </p>
         </div>
         <SliderBox data={data} />

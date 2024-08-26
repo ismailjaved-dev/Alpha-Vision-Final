@@ -6,7 +6,7 @@ const AlphaBot = () => {
     const data = 
     {
         heading: 'Make Your Work Fast, Efficient & Easy With AlphaBot ',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam',
+        desc: 'We use the latest advancements in AI to deliver innovative and high-quality technology solutions.',
         links: [
             {
                 label: 'Measurement',

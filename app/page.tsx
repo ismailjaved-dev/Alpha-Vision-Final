@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Hero videoBg="/hero-bg-video.mp4" heading="A Smart, Sustainable Future"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."/>
+            desc="We are committed to driving innovation through smart, sustainable IT solutions. Discover how our innovative services can help you grow."/>
       <Services/>
       <ServiceCard />
       <AlphaBot/>

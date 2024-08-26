@@ -46,7 +46,7 @@ const ProductsContent = () => {
             we have amazing product for your company needs
           </h2>
           <p className="text-md md:text-lg text-gray w-full">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
+          Discover our range of products designed specifically for businesses across various industries.
           </p>
         </div>
       </div>

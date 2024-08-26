@@ -140,7 +140,7 @@ const Clients = () => {
                 Our Clients
             </h2>
             <p className='text-md md:text-lg text-gray'>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
+            Trusted by Leading Companies Across Various Industries
             </p>
         </div>
         <div className="relative flex flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">

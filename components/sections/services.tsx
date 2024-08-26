@@ -44,7 +44,7 @@ const Services = () => {
         <div className="text-center">
             <h2 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold'> Our Services</h2>
             <p className='text-md text-gray'>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
+            Discover the Services We Can Offer to Support Your Business Needs.
             </p>
         </div>
         <div className="relative grid xsm:grid-cols-2 lg:grid-cols-4 gap-8 xsm:gap-0  mt-20 items-end max-w-[62.5rem] mx-auto">
