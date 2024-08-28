@@ -35,9 +35,6 @@ const ProductsContent = () => {
     },
   ];
 
-
-
-
   return (
     <>
       <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5 py-24">

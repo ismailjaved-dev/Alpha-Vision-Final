@@ -9,35 +9,35 @@ const AlphaBot = () => {
         desc: 'We use the latest advancements in AI to deliver innovative and high-quality technology solutions.',
         links: [
             {
-                label: 'Measurement',
+                label: 'Communication',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Client Servicing',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Advertising & Marketing',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Customer Service',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Sales',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Purchasing',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Human Resource (HR)',
                 path: '/'
             },
             {
-                label: 'Measurement',
+                label: 'Finance & Accounting',
                 path: '/'
             }
         ]
@@ -58,10 +58,10 @@ const AlphaBot = () => {
                 <Image src='/bot_light.png' className='glowAnimation' height={120} width={355} alt='Alpha Bot' unoptimized/>
             </div>
         </div>
-        <div className="w-full max-w-[50rem] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-24 p-5">
+        <div className="w-full  mx-auto grid xsm:grid-cols-2 md:grid-cols-4 gap-4 mb-24 p-5">
             {
                 data.links.map((item: any, index: number) => (
-                    <button key={index} className='w-full h-16 rounded-[0.625rem] secondaryBtn'>
+                    <button key={index} className='!w-full h-16 rounded-[0.625rem] secondaryBtn'>
                         {item.label}
                     </button>
                 ))

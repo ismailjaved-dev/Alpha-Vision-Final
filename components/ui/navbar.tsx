@@ -37,10 +37,10 @@ const Navbar = () => {
       label: "Our Products",
       path: "/products",
     },
-    {
-      label: "Blog",
-      path: "/blog",
-    },
+    // {
+    //   label: "Blog",
+    //   path: "/blog",
+    // },
   ];
 
   useEffect(() => {

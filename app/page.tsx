@@ -17,7 +17,7 @@ export default function Home() {
       <AlphaBot/>
       <Products/>
       <Clients/>
-      <Blog/>
+      {/* <Blog/> */}
       <Footer/>
     </main>
   );
