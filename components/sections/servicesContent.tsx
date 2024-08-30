@@ -165,8 +165,7 @@ interface ServiceProps {
         We offer various services
     </h2>
     <p className="text-md md:text-lg text-gray">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-        Aliquam
+    Discover the Services We Can Offer to Support Your Business Needs.
     </p>
 
     <div className="grid xsm:grid-cols-2 md:grid-cols-4 my-20 gap-5">
@@ -178,10 +177,10 @@ interface ServiceProps {
     <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
         {pathname}
     </h2>
-    <p className="text-md md:text-lg text-gray">
+    {/* <p className="text-md md:text-lg text-gray">
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
         Aliquam
-    </p>
+    </p> */}
 
     <div className="mt-16">
         {data[0].data.map((res:any,index:number) => (

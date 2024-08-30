@@ -92,7 +92,7 @@ export default function About() {
             Meet with the team
           </h2>
           <p className="text-md md:text-lg text-gray">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
+          Meet the experienced leaders driving Alpha Vision Technology’s success.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-20">
