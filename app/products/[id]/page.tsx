@@ -20,7 +20,7 @@ const Page = () => {
           benefits:  <ul>
           <li className='my-1'><b>Security: </b>Employs state-of-the-art encryption and blockchain technology to safeguard your transactions and digital assets.</li>
           <li className='my-1'><b>Speed: </b>Enables near-instantaneous transactions, reducing the time and costs associated with traditional banking systems.</li>
-          <li className='my-1'><b>Transparency: </b>Utilizes blockchain's immutable ledger to provide a clear, verifiable record of all transactions.</li>
+          <li className='my-1'><b>Transparency: </b>{`Utilizes blockchain's immutable ledger to provide a clear, verifiable record of all transactions.`}</li>
           <li className='my-1'><b>Global Reach: </b>Facilitates cross-border transactions without the need for intermediaries, making it easier to transfer funds worldwide.</li>
           <li className='my-1'><b>Cost-Effective: </b>Reduces transaction fees compared to traditional financial systems, offering significant savings on large or frequent transactions.</li>
           <li className='my-1'><b>CRM Benefits: </b>Enhances customer engagement and satisfaction by providing personalized service and streamlined communication through integrated CRM tools.</li>
