@@ -287,3 +287,26 @@ h2,h3,h4,h5,h6{
     background: rgb(35,19,73);
 background: linear-gradient(140deg, rgba(35,19,73,1) 0%, rgba(21,15,34,1) 100%);
 }
+
+.swiper-gr{
+    position: absolute;
+    height: 94%;
+    width: 18%;
+    z-index: 100;
+}
+
+.swiper-gr-right{
+    right: 0;
+background: linear-gradient(90deg, rgba(247,247,247,0) 20%, rgba(29,17,58,1) 100%);
+}
+
+.swiper-gr-left{
+    /* background: linear-gradient(90deg, rgba(29,17,58,1) 0%, rgba(247,247,247,0) 100%); */
+    background: linear-gradient(90deg, rgba(32,18,64,1)  0%,rgba(247,247,247,0) 100%);
+}
+
+@media only screen and (max-width: 400px)  {
+    .swiper-gr{
+        display: none;
+    }
+}

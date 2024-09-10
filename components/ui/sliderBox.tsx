@@ -37,13 +37,13 @@ const SliderBox = ({data}: any) => {
             </div>
             <div className='w-full' data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
               <Swiper
-                spaceBetween={-120}
+                spaceBetween={-130}
                 slidesPerView={1.5}
                 centeredSlides={true}
                 initialSlide={1}
                 loop={true}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => {}}
+                onSwiper={(swiper) => {}}
                 className='animate-bounce duration-2500 product-slide'
                 autoplay={{
                   delay: 2500,

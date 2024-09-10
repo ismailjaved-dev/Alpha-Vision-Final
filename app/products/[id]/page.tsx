@@ -2,9 +2,9 @@
 import React from 'react'
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-
 import 'swiper/css';
-
+import {Swiper, SwiperSlide} from 'swiper/react'; 
+import { Autoplay } from 'swiper/modules';
 
 const Page = () => {
 
@@ -39,7 +39,26 @@ const Page = () => {
           works:"Our trusted customized System operates on a decentralized blockchain network, ensuring that all transactions are secure, transparent, and immutable. Users can create an account and integrate their digital wallets with the platform. Once set up, they can easily send or receive cryptocurrencies by entering the recipient's wallet address and the amount to be transferred. The system verifies the transaction on the blockchain, providing real-time confirmation and updating the user’s balance. With multi-currency support and real-time monitoring, managing your crypto assets has never been easier.",
           workImg:"/product1work.svg",
           pathname:"crypto-currency-transaction-system",
-
+          slides: [
+            {
+                url: '/product1-1.svg'
+            },
+            {
+                url: '/product1-2.svg'
+            },
+            {
+                url: '/product1-3.svg'
+            },
+            {
+                url: '/product1-1.svg'
+            },
+            {
+              url: '/product1-2.svg'
+          },
+          {
+              url: '/product1-3.svg'
+          }
+        ]
         },
         {
           title: "E-Commerce Management System",
@@ -65,7 +84,27 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Our E-Commerce Management System works by integrating all your e-commerce processes into a single, user-friendly platform. Once set up, it automates tasks such as inventory updates, order tracking, and customer communication. You can manage products, process orders, and analyze sales data from a centralized dashboard. The system also integrates with various third-party applications, enabling seamless payment processing, shipping, and marketing. Through real-time analytics, you can monitor performance and make data-driven decisions to optimize your e-commerce operations",
           workImg:"/product1work.svg",
-          pathname:"e-commerce-management-system"
+          pathname:"e-commerce-management-system",
+          slides: [
+            {
+                url: '/product2-1.svg'
+            },
+            {
+                url: '/product2-2.svg'
+            },
+            {
+                url: '/product2-3.svg'
+            },
+            {
+                url: '/product2-1.svg'
+            },
+            {
+              url: '/product2-2.svg'
+          },
+          {
+              url: '/product2-3.svg'
+          }
+        ]
         },
         {
           title: "E-Leave Management System",
@@ -92,7 +131,27 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Our customized E-Leave Management System operates through an intuitive online platform where employees can easily log in to request leave, check their balances, and view the status of their applications. Managers receive automated notifications of new leave requests, which they can approve or deny with a few clicks. The system automatically updates leave balances, records the transaction, and integrates with payroll for accurate leave accounting. HR can access detailed reports and analytics, making it easier to manage leave policies and ensure compliance.",
           workImg:"/product1work.svg",
-          pathname:"e-leave-management-system"
+          pathname:"e-leave-management-system",
+          slides: [
+            {
+                url: '/product3-1.svg'
+            },
+            {
+                url: '/product3-2.svg'
+            },
+            {
+                url: '/product3-3.svg'
+            },
+            {
+                url: '/product3-1.svg'
+            },
+            {
+              url: '/product3-2.svg'
+          },
+          {
+              url: '/product3-3.svg'
+          }
+        ]
         },
         {
           title: "Inventory Management System",
@@ -118,104 +177,133 @@ const Page = () => {
           featureImg:"/product1feature.svg",
           works:"Our Inventory Management System integrates with your existing sales channels, suppliers, and warehouse systems to provide a unified view of your inventory. Users can log in to the platform to monitor stock levels, process orders, and generate reports. The system automatically updates inventory quantities in real-time as orders are placed, stock is received, or items are sold. Automated alerts notify you when stock levels reach predefined thresholds, prompting reordering to prevent stockouts. The platform's analytics tools help you identify trends, optimize stock levels, and make data-driven decisions to improve overall inventory management.",
           workImg:"/product1work.svg",
-          pathname:"inventory-management-system"
+          pathname:"inventory-management-system",
+          slides: [
+              {
+                  url: '/product4-1.svg'
+              },
+              {
+                  url: '/product4-2.svg'
+              },
+              {
+                  url: '/product4-3.svg'
+              },
+              {
+                  url: '/product4-1.svg'
+              },
+              ,
+              {
+                  url: '/product4-2.svg'
+              },
+              {
+                  url: '/product4-3.svg'
+              }
+          ]
         },
       ];
 
 
 
-   const slides = [
-      {
-          url: '/mockup.png'
-      },
-      {
-          url: '/mockup.png'
-      },
-      {
-          url: '/mockup.png'
-      },
-      {
-          url: '/mockup.png'
-      }
-  ]
 
-      const renderData = data.filter((res)=>{
-         return res.pathname == pathName
-      })
+
+const renderData = data.filter((res) => res.pathname === pathName);
 
 
   return (
     <section className="overflow-x-hidden py-16 px-6 productInnerPage pt-28 md:pt-40">
-         {
-          renderData.map((res,index)=>{
-          return(
-            <div key={index} className='w-full max-w-fluid mx-auto'>
-            <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
-            <p>{res.desc}</p>
+      {renderData.map((res, index) => (
+        <div key={index} className='w-full max-w-fluid mx-auto'>
+          <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
+          <p>{res.desc}</p>
 
-            {/* <div className='py-10'>
+          <div className='py-10 relative'>
+            
+            <div className='swiper-gr swiper-gr-left'></div>
+            <div className='swiper-gr swiper-gr-right'></div>
+           
             <Swiper
-                spaceBetween={-300}
-                slidesPerView={1.5}
-                centeredSlides={true}
-                initialSlide={1}
-                loop={true}
-                onSwiper={(swiper) => console.log(swiper)}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                // modules={[Autoplay]}
+                 slidesPerView={1.5}
+                 centeredSlides={true}
+                 //  initialSlide={1}
+                 loop={true}
+                 onSwiper={(swiper) => console.log(swiper)}
+                 autoplay={{
+                   delay: 2500,
+                   disableOnInteraction: false,
+                  }}
+                  breakpoints={{
+                    100: {
+                      spaceBetween: 100,
+                      slidesPerView: 1,
+                    },
+                    400: {
+                      slidesPerView: 1.5,
+                      spaceBetween: -100,
+                    },
+                    600: {
+                      spaceBetween: -150,
+                    },
+                    800: {
+                      spaceBetween: -200,
+                    },
+                    1100: {
+                      spaceBetween: -250,
+                    },
+                    1300: {
+                      spaceBetween: -350,
+                    }
+                  }}
+                  spaceBetween={-300}
+                modules={[Autoplay]}
               >
                 {
-                  slides?.map((slide: any, index: number) => (
+                  res?.slides?.map((slide: any, index: number) => (
                     <SwiperSlide key={index}>
                       {({isActive}) => (
                         <img src={slide.url} alt="slide"
-                             className={`${isActive ? 'opacity-100 scale-100' : 'scale-50 opacity-30'} w-full  transition-all duration-500 `}/>
+                             className={`${isActive ? 'opacity-100 scale-90 z-[999]' : 'scale-50 opacity-30 z-10'} relative w-full  transition-all duration-500 `}/>
                       )}
                     </SwiperSlide>
                   ))
                 }
-              </Swiper>
-            </div> */}
-                
-                 <div className='md:flex gap-10 justify-between py-10 border-b border-primary'>
-                  <div className='md:max-w-[400px]'>
-                    <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
-                    <p>{res.about}</p>
-                  </div>
-                  <div className='mt-10 md:mt-0 md:max-w-[400px]'>
-                    <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
-                    <p>{res.benefits}</p>
-                  </div>
-                 </div>
 
-                  
-                 <div className='md:flex gap-10 justify-between items-center py-10 '>
-                  <div className='md:max-w-[400px] relative max-h-fit'>
-                    <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
-                    <p>{res.keyFeatured}</p>
-                  </div>
-                  <div className='max-w-[600px] relative w-full min-h-[400px]'>
-                     <Image src={res.featureImg} fill alt=""/>
-                  </div>
-                 </div>
+                </Swiper>
 
-                 <div className='py-10 '>
-                  <div>
-                    <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
-                    <p>{res.works}</p>
-                  </div>
-                  <div className='hidden md:block relative w-full min-h-[700px] mt-10'>
-                     <Image src={res.workImg} fill alt=""/>
-                  </div>
-                 </div>
+          </div>
 
-              </div>
-          )})
-         }
-           
+          <div className='md:flex gap-10 justify-between py-10 border-b border-primary'>
+            <div className='md:max-w-[400px]'>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
+              <p>{res.about}</p>
+            </div>
+            <div className='mt-10 md:mt-0 md:max-w-[400px]'>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
+              <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
+            </div>
+          </div>
+
+          <div className='md:flex gap-10 justify-between items-center py-10 '>
+            <div className='md:max-w-[400px] relative max-h-fit'>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
+              <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
+            </div>
+            <div className='max-w-[600px] relative w-full min-h-[400px]'>
+              <Image src={res.featureImg} fill alt="" />
+            </div>
+          </div>
+
+          <div className='py-10 '>
+            <div>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
+              <p>{res.works}</p>
+            </div>
+            <div className='hidden md:block relative w-full min-h-[700px] mt-10'>
+              <Image src={res.workImg} fill alt="" />
+            </div>
+          </div>
+
+        </div>
+      ))}
     </section>
   )
 }

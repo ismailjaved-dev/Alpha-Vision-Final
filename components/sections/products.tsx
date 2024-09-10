@@ -9,17 +9,23 @@ const Products = () => {
             path: "/",
             slides: [
                 {
-                    url: '/mockup.png'
+                    url: '/product1-1.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product1-2.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product1-3.svg'
                 },
                 {
-                    url: '/mockup.png'
-                }
+                    url: '/product1-1.svg'
+                },
+                {
+                  url: '/product1-2.svg'
+              },
+              {
+                  url: '/product1-3.svg'
+              }
             ]
         },
         {
@@ -28,17 +34,23 @@ const Products = () => {
             path: "/",
             slides: [
                 {
-                    url: '/mockup.png'
+                    url: '/product2-1.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product2-2.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product2-3.svg'
                 },
                 {
-                    url: '/mockup.png'
-                }
+                    url: '/product2-1.svg'
+                },
+                {
+                  url: '/product2-2.svg'
+              },
+              {
+                  url: '/product2-3.svg'
+              }
             ]
         },
         {
@@ -47,17 +59,23 @@ const Products = () => {
             path: "/",
             slides: [
                 {
-                    url: '/mockup.png'
+                    url: '/product3-1.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product3-2.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product3-3.svg'
                 },
                 {
-                    url: '/mockup.png'
-                }
+                    url: '/product3-1.svg'
+                },
+                {
+                  url: '/product3-2.svg'
+              },
+              {
+                  url: '/product3-3.svg'
+              }
             ]
         },
         {
@@ -66,16 +84,23 @@ const Products = () => {
             path: "/",
             slides: [
                 {
-                    url: '/mockup.png'
+                    url: '/product4-1.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product4-2.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product4-3.svg'
                 },
                 {
-                    url: '/mockup.png'
+                    url: '/product4-1.svg'
+                },
+                ,
+                {
+                    url: '/product4-2.svg'
+                },
+                {
+                    url: '/product4-3.svg'
                 }
             ]
         }
