@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { LinkedinIcon } from "lucide-react";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa6";
 
 const data = [
   {
@@ -95,7 +96,7 @@ export default function About() {
           Meet the experienced leaders driving Alpha Vision Technology’s success.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-20">
+          <div className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-20">
             <div
               className={`gradientBg !opacity-100 p-[15px] flex flex-col gap-16 relative overflow-hidden cursor-default`}
             >
@@ -105,26 +106,11 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={"https://www.linkedin.com/in/itsalisajid/"} target="_blank">
-                  <LinkedinIcon className=" cursor-pointer" />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
                   </Link>
                 </p>
               </div>
-              {/* <div className="mt-5">
-                    <h4
-                      className={`text-h4 leading-[1] ${
-                        activeCard && "text-white"
-                      }`}
-                    >
-                    asd
-                    </h4>
-                    <p
-                      className={`text-sm ${
-                        activeCard ? "text-white/50" : " text-grayText"
-                      }`}
-                    >
-                      Points
-                    </p>
-                  </div> */}
+            
               <p
                 className={`text-left text-lg font-bold ${
                   activeCard && "text-white"
@@ -135,10 +121,10 @@ export default function About() {
                 Khan
               </p>
               <Image
-                src={"/person.svg"}
+                src={"/ali.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
               />
             </div>
 
@@ -153,7 +139,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                 <Link href={"https://www.linkedin.com/in/talha-wajid-679559216/"} target="_blank">
-                  <LinkedinIcon className=" cursor-pointer" />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
                   </Link>
                 </p>
               </div>
@@ -168,10 +154,10 @@ export default function About() {
                 Wajid
               </p>
               <Image
-                src={"/person.svg"}
+                src={"/talha.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
               />
             </div>
 
@@ -186,7 +172,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                 <Link href={"https://www.linkedin.com/in/yousuf-sajid/"} target="_blank">
-                  <LinkedinIcon className=" cursor-pointer" />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
                   </Link>
                 </p>
               </div>
@@ -201,10 +187,10 @@ export default function About() {
                 Sajid
               </p>
               <Image
-                src={"/person.svg"}
+                src={"/mohd.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
               />
             </div>
 
@@ -219,26 +205,11 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={""} >
-                  <LinkedinIcon className=" cursor-pointer" />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
                   </Link>
                 </p>
               </div>
-              {/* <div className="mt-5">
-                    <h4
-                      className={`text-h4 leading-[1] ${
-                        activeCard && "text-white"
-                      }`}
-                    >
-                    asd
-                    </h4>
-                    <p
-                      className={`text-sm ${
-                        activeCard ? "text-white/50" : " text-grayText"
-                      }`}
-                    >
-                      Points
-                    </p>
-                  </div> */}
+           
               <p
                 className={`text-left text-lg font-bold ${
                   activeCard && "text-white"
@@ -249,10 +220,10 @@ export default function About() {
                 Nour
               </p>
               <Image
-                src={"/person.svg"}
+                src={"/ahmed.svg"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
               />
             </div>
 
@@ -267,26 +238,11 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={"https://www.linkedin.com/in/nancykhoo21/"} target="_blank">
-                  <LinkedinIcon className=" cursor-pointer" />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
                   </Link>
                 </p>
               </div>
-              {/* <div className="mt-5">
-                    <h4
-                      className={`text-h4 leading-[1] ${
-                        activeCard && "text-white"
-                      }`}
-                    >
-                    asd
-                    </h4>
-                    <p
-                      className={`text-sm ${
-                        activeCard ? "text-white/50" : " text-grayText"
-                      }`}
-                    >
-                      Points
-                    </p>
-                  </div> */}
+          
               <p
                 className={`text-left text-lg font-bold ${
                   activeCard && "text-white"
@@ -297,10 +253,10 @@ export default function About() {
                 Khoo
               </p>
               <Image
-                src={"/person.svg"}
+                src={"/nancy.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[75%] !top-[25%] !bottom-0 !right-[-7%] !z-[-10] !left-[34%]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
               />
             </div>
           </div>

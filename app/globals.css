@@ -297,12 +297,12 @@ background: linear-gradient(140deg, rgba(35,19,73,1) 0%, rgba(21,15,34,1) 100%);
 
 .swiper-gr-right{
     right: 0;
-background: linear-gradient(90deg, rgba(247,247,247,0) 20%, rgba(29,17,58,1) 100%);
+background: linear-gradient(90deg, rgba(247, 247, 247, 0) 20%, rgb(24 16 41) 100%);
 }
 
 .swiper-gr-left{
     /* background: linear-gradient(90deg, rgba(29,17,58,1) 0%, rgba(247,247,247,0) 100%); */
-    background: linear-gradient(90deg, rgba(32,18,64,1)  0%,rgba(247,247,247,0) 100%);
+    background: linear-gradient(90deg, rgb(27 16 51) 0%, rgba(247, 247, 247, 0) 100%);
 }
 
 @media only screen and (max-width: 400px)  {

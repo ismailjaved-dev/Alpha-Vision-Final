@@ -216,6 +216,35 @@ const renderData = data.filter((res) => res.pathname === pathName);
           <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
           <p>{res.desc}</p>
 
+        
+
+          <div className='lg:flex gap-10 justify-between py-10 border-b border-primary items-center'>
+            <div className='lg:max-w-[400px]'>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
+              <p>{res.about}</p>
+            </div>
+            <div className='mt-10 lg:mt-0 lg:max-w-[400px]'>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
+              <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
+            </div>
+          </div>
+
+          <div className=' py-10 '>
+            
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
+              <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
+       
+            
+          </div>
+
+          <div className='py-10 '>
+            <div>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
+              <p>{res.works}</p>
+            </div>
+           
+          </div>
+
           <div className='py-10 relative'>
             
             <div className='swiper-gr swiper-gr-left'></div>
@@ -269,37 +298,6 @@ const renderData = data.filter((res) => res.pathname === pathName);
 
                 </Swiper>
 
-          </div>
-
-          <div className='md:flex gap-10 justify-between py-10 border-b border-primary'>
-            <div className='md:max-w-[400px]'>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
-              <p>{res.about}</p>
-            </div>
-            <div className='mt-10 md:mt-0 md:max-w-[400px]'>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
-              <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
-            </div>
-          </div>
-
-          <div className='md:flex gap-10 justify-between items-center py-10 '>
-            <div className='md:max-w-[400px] relative max-h-fit'>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
-              <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
-            </div>
-            <div className='max-w-[600px] relative w-full min-h-[400px]'>
-              <Image src={res.featureImg} fill alt="" />
-            </div>
-          </div>
-
-          <div className='py-10 '>
-            <div>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
-              <p>{res.works}</p>
-            </div>
-            <div className='hidden md:block relative w-full min-h-[700px] mt-10'>
-              <Image src={res.workImg} fill alt="" />
-            </div>
           </div>
 
         </div>
