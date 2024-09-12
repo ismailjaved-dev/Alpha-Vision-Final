@@ -149,9 +149,8 @@ export default function About() {
                   activeCard && "text-white"
                 }`}
               >
-                Talha
                 <br />
-                Wajid
+                Talha
               </p>
               <Image
                 src={"/talha.png"}
@@ -182,15 +181,15 @@ export default function About() {
                   activeCard && "text-white"
                 }`}
               >
-                Yousuf
+                Mohd
                 <br />
-                Sajid
+                Shariman
               </p>
               <Image
                 src={"/mohd.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[140px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[130px]"
               />
             </div>
 
