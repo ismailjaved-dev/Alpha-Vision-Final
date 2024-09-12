@@ -106,7 +106,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={"https://www.linkedin.com/in/itsalisajid/"} target="_blank">
-                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff] mt-[-7px]' />
                   </Link>
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                 <Link href={"https://www.linkedin.com/in/talha-wajid-679559216/"} target="_blank">
-                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff] mt-[-7px]' />
                   </Link>
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                 <Link href={"https://www.linkedin.com/in/yousuf-sajid/"} target="_blank">
-                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff] mt-[-7px]' />
                   </Link>
                 </p>
               </div>
@@ -204,7 +204,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={""} >
-                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff] mt-[-7px]' />
                   </Link>
                 </p>
               </div>
@@ -237,7 +237,7 @@ export default function About() {
                 </p>
                 <p className="bg-secondary text-sm text-white h-fit px-3 py-[7px] rounded-sm min-w-10 text-center">
                   <Link href={"https://www.linkedin.com/in/nancykhoo21/"} target="_blank">
-                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+                  <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff] mt-[-7px]' />
                   </Link>
                 </p>
               </div>
