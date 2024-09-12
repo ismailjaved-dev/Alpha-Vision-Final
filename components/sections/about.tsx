@@ -157,7 +157,7 @@ export default function About() {
                 src={"/talha.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
+                className="absolute !w-2/3 !h-[73%] !top-[25%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px] mr-2"
               />
             </div>
 
@@ -190,7 +190,7 @@ export default function About() {
                 src={"/mohd.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[140px]"
               />
             </div>
 
@@ -256,7 +256,7 @@ export default function About() {
                 src={"/nancy.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[125px]"
               />
             </div>
           </div>
