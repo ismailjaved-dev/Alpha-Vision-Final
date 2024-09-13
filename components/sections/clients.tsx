@@ -134,7 +134,7 @@ const Clients = () => {
 
 
   return (
-    <div className=''>
+    <div className='mb-16'>
         <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5">
             <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
                 Our Clients

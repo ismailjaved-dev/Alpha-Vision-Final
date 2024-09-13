@@ -112,7 +112,7 @@ export default function About() {
               </div>
             
               <p
-                className={`text-left text-lg font-bold ${
+                className={`text-left text-lg font-[600px] ${
                   activeCard && "text-white"
                 }`}
               >
@@ -124,7 +124,7 @@ export default function About() {
                 src={"/ali.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[150px]"
               />
             </div>
 
@@ -145,11 +145,11 @@ export default function About() {
               </div>
              
               <p
-                className={`text-left text-lg font-bold ${
+                className={`text-left text-lg font-[600px] ${
                   activeCard && "text-white"
                 }`}
               >
-                <br />
+              
                 Talha
               </p>
               <Image
@@ -177,7 +177,7 @@ export default function About() {
               </div>
              
               <p
-                className={`text-left text-lg font-bold ${
+                className={`text-left text-lg font-[600px] ${
                   activeCard && "text-white"
                 }`}
               >
@@ -189,7 +189,7 @@ export default function About() {
                 src={"/mohd.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[130px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px]"
               />
             </div>
 
@@ -210,7 +210,7 @@ export default function About() {
               </div>
            
               <p
-                className={`text-left text-lg font-bold ${
+                className={`text-left text-lg font-[600px] ${
                   activeCard && "text-white"
                 }`}
               >
@@ -243,7 +243,7 @@ export default function About() {
               </div>
           
               <p
-                className={`text-left text-lg font-bold ${
+                className={`text-left text-lg font-[600px] ${
                   activeCard && "text-white"
                 }`}
               >
