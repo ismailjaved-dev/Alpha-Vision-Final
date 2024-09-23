@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ServiceCard = () => {
   return (
@@ -9,7 +10,9 @@ const ServiceCard = () => {
      <div className='flex flex-col gap-7 items-start'>
      <h3 className='text-h4 sm:text-h3 font-grotesk leading-[100%] m-0'>Our Services</h3>
       <p>Learn More About Our Services</p>
+      <Link href={"/services/hardware"}>
       <button className='primaryBtn mt-5'>See Our Services</button>
+      </Link>
      </div>
      
 

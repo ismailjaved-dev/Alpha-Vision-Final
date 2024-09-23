@@ -12,6 +12,7 @@ import Image from 'next/image';
 import {Autoplay} from 'swiper/modules';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const SliderBox = ({data}: any) => {
 
@@ -33,7 +34,9 @@ const SliderBox = ({data}: any) => {
                   className='text-h4 font-grotesk font-semibold w-full max-w-[30.1875rem] mr-auto leading-tight'>{item.heading}</h2>
                 <p className='hidden md:block text-md text-gray'>{parse(item.desc)}</p>
               </div>
+              <Link href={item.href}>
               <button  className='primaryBtn w-max md:mr-auto'>Learn More</button>
+              </Link>
             </div>
             <div className='w-full' data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}>
               <Swiper

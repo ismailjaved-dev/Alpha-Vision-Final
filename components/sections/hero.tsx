@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import {Button} from '../ui/button'
 import {usePathname} from 'next/navigation'
+import Link from 'next/link'
 
 interface HeroProps {
   heading: string;
@@ -27,9 +28,9 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
 
         {
           pathname == '/' &&
-           <>
+           <Link href={'/contact'}>
             <button className='primaryBtn'>Book Now</button>
-           </>
+           </Link>
         }
 
       </div>

@@ -6,37 +6,37 @@ const Services = () => {
     const left_btns = [
         {
             label: 'Security',
-            path: '/'
+            path: '/services/security'
         },
         {
             label: 'Networking',
-            path: '/'
+            path: '/services/networking'
         },
         {
             label: 'Data Recovery',
-            path: '/'
+            path: '/services/data-recovery'
         },
         {
             label: 'Artificial Intelligence',
-            path: '/'
+            path: '/services/artificial-intelligence'
         },
     ]
     const right_btns = [
         {
             label: 'Software',
-            path: '/'
+            path: '/services/software'
         },
         {
             label: 'Hardware',
-            path: '/'
+            path: '/services/hardware'
         },
         {
             label: 'Marketing',
-            path: '/'
+            path: '/services/marketing'
         },
         {
             label: 'IT Consulting',
-            path: '/'
+            path: '/services/it-consulting'
         },
     ]
   return (
