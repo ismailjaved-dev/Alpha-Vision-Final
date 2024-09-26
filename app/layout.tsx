@@ -43,7 +43,7 @@ export default function RootLayout({
      
       </head>
     <body className={`${clash.variable} ${montserrat.variable} font-sans text-white bg-background antialiased`}>
-    <Navbar/>
+    {/* <Navbar/> */}
     {children}
     <Toaster/>
 
