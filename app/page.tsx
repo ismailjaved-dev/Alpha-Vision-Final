@@ -15,7 +15,7 @@ export default function Home() {
         <Image fill src={'/hero_home.png'} alt=""/>
      <div className="relative z-20">
      <h1 className="text-h2 sm:text-h1 capitalize font-bold">Site is under maintenance</h1>
-     <p>We're working hard to improve the user experience. Stay tuned!</p>
+     <p>{`We're working hard to improve the user experience. Stay tuned!`}</p>
      </div>
       </div>
       {/* <Hero videoBg="/hero-bg-video.mp4" heading="A Smart, Sustainable Future"
