@@ -168,7 +168,7 @@ h2,h3,h4,h5,h6{
 }
 
 
-.secondaryBtn{
+.secondaryBtn, .serviceBtn{
     background: linear-gradient(#231349, #231349) padding-box, linear-gradient(320deg, #568bfa -10%, rgba(58, 100, 250, 0) 20%, rgba(24, 195, 250, 0) 30%, #568bfa 50%, rgba(58, 100, 250, 0) 70%, rgba(24, 195, 250, 0) 80%, #568bfa 110%) border-box;
     background-size: 200% 200%;
     border: 2px solid transparent;
@@ -248,7 +248,7 @@ h2,h3,h4,h5,h6{
     background: linear-gradient(90deg, #568bfa, #9435ff) !important;
     border: 1px solid #9435ff;
 }
-.secondaryBtn:hover{
+.secondaryBtn:hover, .serviceBtn:hover{
     animation: btnAnimation 1s ease;
 }
 
@@ -297,12 +297,12 @@ background: linear-gradient(140deg, rgba(35,19,73,1) 0%, rgba(21,15,34,1) 100%);
 
 .swiper-gr-right{
     right: 0;
-background: linear-gradient(90deg, rgba(247, 247, 247, 0) 20%, rgb(24 16 41) 100%);
+background: linear-gradient(90deg, rgba(247, 247, 247, 0) 20%, rgb(29 17 55) 100%);
 }
 
 .swiper-gr-left{
     /* background: linear-gradient(90deg, rgba(29,17,58,1) 0%, rgba(247,247,247,0) 100%); */
-    background: linear-gradient(90deg, rgb(27 16 51) 0%, rgba(247, 247, 247, 0) 100%);
+    background: linear-gradient(90deg, rgb(32 18 65) 0%, rgba(247, 247, 247, 0) 100%);
 }
 
 @media only screen and (max-width: 400px)  {

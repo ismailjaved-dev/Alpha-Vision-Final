@@ -213,39 +213,8 @@ const renderData = data.filter((res) => res.pathname === pathName);
     <section className="overflow-x-hidden py-16 px-6 productInnerPage pt-28 md:pt-40">
       {renderData.map((res, index) => (
         <div key={index} className='w-full max-w-fluid mx-auto'>
-          <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
-          <p>{res.desc}</p>
 
-        
-
-          <div className='lg:flex gap-10 justify-between py-10 border-b border-primary items-center'>
-            <div className='lg:max-w-[400px]'>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
-              <p>{res.about}</p>
-            </div>
-            <div className='mt-10 lg:mt-0 lg:max-w-[400px]'>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
-              <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
-            </div>
-          </div>
-
-          <div className=' py-10 '>
-            
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
-              <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
-       
-            
-          </div>
-
-          <div className='py-10 '>
-            <div>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
-              <p>{res.works}</p>
-            </div>
-           
-          </div>
-
-          <div className='py-10 relative'>
+<div className='py-10 relative'>
             
             <div className='swiper-gr swiper-gr-left'></div>
             <div className='swiper-gr swiper-gr-right'></div>
@@ -290,7 +259,7 @@ const renderData = data.filter((res) => res.pathname === pathName);
                     <SwiperSlide key={index}>
                       {({isActive}) => (
                         <img src={slide.url} alt="slide"
-                             className={`${isActive ? 'opacity-100 scale-90 z-[999]' : 'scale-50 opacity-30 z-10'} relative w-full  transition-all duration-500 `}/>
+                             className={`${isActive ? 'opacity-100 scale-90 z-[999]' : 'scale-50 opacity-30 z-10'} relative w-full  transition-all duration-500 object-cover`}/>
                       )}
                     </SwiperSlide>
                   ))
@@ -299,6 +268,40 @@ const renderData = data.filter((res) => res.pathname === pathName);
                 </Swiper>
 
           </div>
+
+          <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
+          <p>{res.desc}</p>
+
+        
+
+          <div className='py-10 border-b border-primary items-center mt-4'>
+            <div className=''>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
+              <p>{res.about}</p>
+            </div>
+            <div className='mt-12  '>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
+              <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
+            </div>
+          </div>
+
+          <div className=' py-10 '>
+            
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
+              <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
+       
+            
+          </div>
+
+          <div className='py-10 '>
+            <div>
+              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
+              <p>{res.works}</p>
+            </div>
+           
+          </div>
+
+       
 
         </div>
       ))}

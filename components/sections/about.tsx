@@ -124,7 +124,7 @@ export default function About() {
                 src={"/ali.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[150px]"
+                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[125px]"
               />
             </div>
 
@@ -156,7 +156,7 @@ export default function About() {
                 src={"/talha.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[73%] !top-[25%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px] mr-2"
+                className="absolute !w-2/3 !h-[69%] !top-[30%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px] mr-2"
               />
             </div>
 
@@ -189,7 +189,7 @@ export default function About() {
                 src={"/mohd.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px]"
+                className="absolute !w-2/3 !h-[70%] !top-[28%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[110px]"
               />
             </div>
 
@@ -198,7 +198,7 @@ export default function About() {
             >
               <div className="flex justify-between">
                 <p className={`text-sm text-white/50 text-left`}>
-                  Sales
+                  Finance
                   <br />
                   Manager
                 </p>
@@ -222,7 +222,7 @@ export default function About() {
                 src={"/ahmed.svg"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[185px]"
+                className="absolute !w-2/3 !h-[98%] !top-[26%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[120px]"
               />
             </div>
 
@@ -255,7 +255,7 @@ export default function About() {
                 src={"/nancy.png"}
                 alt={"res.fullName"}
                 fill
-                className="absolute !w-2/3 !h-[74%] !top-[24%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[125px]"
+                className="absolute !w-2/3 !h-[69%] !top-[30%] !bottom-0 !right-[0] !left-auto !z-[-10] !max-w-[125px]"
               />
             </div>
           </div>

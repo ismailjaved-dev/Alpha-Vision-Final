@@ -68,8 +68,8 @@ interface ServiceProps {
           serviceName:"hardware",
           data: [
           {title:"Hardware Repairs & Upgrades",desc:"We specialize in providing professional repair and upgrade services for all your electronic devices. Whether it's your laptop, Desktop PC, smartphone, tablet, TV, or projector, our skilled technicians are dedicated to providing quick and reliable solutions to get your devices back in optimal condition. From cracked screens and hardware malfunctions to software upgrades and performance enhancements, we handle it all with precision. Reach out to us today for swift and dependable repair and upgrade services for your needs.",img:'/hardware1.jpg'},
-          {title:"Hardware Sourcing & Procurement",desc:"With years of experience and a vast network of trusted suppliers, we excel in sourcing the highest quality hardware components and peripherals with competitive pricing. Whether you require laptops, computer components, from CPUs and GPUs to networking gear and peripherals, networking devices & equipment, servers, storage solutions, or any other hardware, we’ve got you covered. Our dedicated team works tirelessly to source the best products that align with your requirements.",img:'/hardware3.jpg'},
-          {title:"IT Asset Management",desc:"With our expertise in asset tracking, inventory management, and lifecycle planning, we provide tailored solutions to efficiently manage your organization's IT assets from acquisition to disposal. Our robust software platforms and skilled professionals ensure accurate tracking of hardware, software licenses, and other IT resources, enabling you to make informed decisions and maximize asset utilization. Whether you're a small business or a large enterprise, our customizable services adapt to your unique requirements, helping you reduce costs, minimize risks, and enhance productivity.",img:'/hardware4.jpg'},      
+          {title:"Hardware Sourcing & Procurement",desc:"With years of experience and a vast network of trusted suppliers, we excel in sourcing the highest quality hardware components and peripherals with competitive pricing. Whether you require laptops, computer components, from CPUs and GPUs to networking gear and peripherals, networking devices & equipment, servers, storage solutions, or any other hardware, we’ve got you covered. Our dedicated team works tirelessly to source the best products that align with your requirements.",img:'/hardware2.jpg'},
+          {title:"IT Asset Management",desc:"With our expertise in asset tracking, inventory management, and lifecycle planning, we provide tailored solutions to efficiently manage your organization's IT assets from acquisition to disposal. Our robust software platforms and skilled professionals ensure accurate tracking of hardware, software licenses, and other IT resources, enabling you to make informed decisions and maximize asset utilization. Whether you're a small business or a large enterprise, our customizable services adapt to your unique requirements, helping you reduce costs, minimize risks, and enhance productivity.",img:'/hardware3.jpg'},      
           {title:"Server Installation & Configuration",desc:"With our team of experienced IT professionals, we specialize in deploying robust server solutions that form the backbone of your digital infrastructure. Our experienced technicians ensure precise hardware installation, including processors, memory, storage drives, and network cards. We perform thorough operating system installation and configuration, along with essential software updates. Whether you’re deploying a new server environment, upgrading an existing one or migrating to cloud-based platforms, we ensure seamless integration and optimal performance for your business needs.",img:'/hardware4.jpg'},      
           ]
         },
@@ -175,7 +175,7 @@ interface ServiceProps {
     </div>
 
     <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
-        {pathname}
+        {pathname.replace("-"," ")}
     </h2>
     {/* <p className="text-md md:text-lg text-gray">
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
@@ -193,7 +193,7 @@ interface ServiceProps {
                     </Link>
                 </div>
                 <div className="h-[25rem] w-full relative" data-aos={`${index % 2 === 0 ? "fade-left" : "fade-right"}`}>
-                    <Image src={res.img} fill priority alt=""/>
+                    <Image src={res.img} fill priority alt="" objectFit="cover"/>
                 </div>
             </div>
         ))}
