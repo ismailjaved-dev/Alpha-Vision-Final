@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaLinkedin,FaFacebook, FaInstagram } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from "next/link";
 
 const cardsData = [
   {
@@ -26,10 +27,10 @@ const cardsData = [
     Icon: '/socialIcon.png',
     content: <>
       <div className="flex gap-5">
-      <FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
-      <FaWhatsapp size={25} className=' cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]'/>
-      <FaInstagram size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
-      <FaFacebook size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' />
+      <Link href='https://www.linkedin.com/company/alphavisiontechnology/' target='_blank'><FaLinkedin size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' /></Link>
+      <Link href="https://wa.me/+6282310242185" target='_blank'><FaWhatsapp size={25} className=' cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]'/></Link>
+      <Link href="https://www.instagram.com/alphavisiontech.id/" target='_blank'><FaInstagram size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' /></Link>
+     <Link href="https://facebook.com/alphavisiontech.id/" target='_blank'><FaFacebook size={25} className='cursor-pointer transition text-[#6C6C6C] hover:text-[#fff]' /></Link>
       </div>
      
     </>

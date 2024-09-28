@@ -8,7 +8,7 @@ const locations = [{icon:"/malFlag.png", name : "Malaysia", href:"https://www.go
 export default function Map() {
   const [currLocation, setCurrLocation] = useState(locations[0]);
 
-  console.log(currLocation)
+
 
   return <div
     className="h-[80vh] border-2 border-primary rounded-lg p-10 lg:p-6 flex flex-col gap-8 justify-center items-center bg-gradient-to-r from-[#150F22] to-background">
