@@ -39,8 +39,8 @@ const ProductsContent = () => {
     <>
       <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5 py-24">
         <div className="text-center flex flex-wrap justify-center">
-          <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize max-w-[56.25rem] leading-normal">
-            we have amazing product for your company needs
+          <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize max-w-[56.25rem] leading-none">
+            We have amazing product for your company needs
           </h2>
           <p className="text-md md:text-lg text-gray w-full">
           Discover our range of products designed specifically for businesses across various industries.
@@ -77,7 +77,7 @@ const ProductsContent = () => {
               return(
                 <SwiperSlide key={index} className="gradientBg py-10 px-8 sm:px-16 min-h-[35rem] overflow-hidden ">
                      <div>
-                     <h1 className="text-h4 md:text-h3 2xl:text-h2 font-bold">{res.title}</h1>
+                     <h1 className="text-h4 md:text-h3 2xl:text-h2 font-bold leading-tight">{res.title}</h1>
                      <p className={`max-w-[25rem]`}>{res.desc}</p>
                      </div>
                   <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[40%] lg:!top-[35%] my-4 lg:my-0`}/>

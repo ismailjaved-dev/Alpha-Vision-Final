@@ -6,7 +6,7 @@ const Products = () => {
         {
             href:"/products/e-commerce-management-system",
             heading: "Crypto Currency Transaction System",
-            desc: "Our customized system is a secure and efficient platform designed to facilitate seamless cryptocurrency transactions. Whether you're sending, receiving, or exchanging digital assets, our system ensures that transactions are fast, transparent, and protected by advanced encryption technologies. Built for both individuals and businesses, it supports a wide range of cryptocurrencies and provides an intuitive interface for managing your digital wealth with confidence.(CRM)",
+            desc: "Our customized system is a secure and efficient platform designed to facilitate seamless cryptocurrency transactions. Whether you're sending, receiving, or exchanging digital assets, our system ensures that transactions are fast, transparent, and protected by advanced encryption technologies. Built for both individuals and businesses, it supports a wide range of cryptocurrencies and provides an intuitive interface for managing your digital wealth with confidence.",
             path: "/",
             slides: [
                 {
@@ -111,7 +111,7 @@ const Products = () => {
   return (
     <div className='w-full max-w-fluid mx-auto overflow-x-hidden px-5'>
         <div className="text-center mx-auto">
-            <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
+            <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
                 Our Products
             </h2>
             <p className='text-md md:text-lg text-gray'>

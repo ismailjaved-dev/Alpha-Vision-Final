@@ -18,8 +18,8 @@ export default function Home() {
      <p>{`We're working hard to improve the user experience. Stay tuned!`}</p>
      </div>
       </div> */}
-      <Hero videoBg="/hero-bg-video.mp4" heading="A Smart, Sustainable Future"
-            desc="We are committed to driving innovation through smart, sustainable IT solutions. Discover how our innovative services can help you grow."/>
+      <Hero videoBg="/hero-bg-video.mp4" heading="<p>Welcome to the Revolation <br/> Welcome to the Alpha Vision Technology</p>"
+            desc="Join us as we continue to push the boundaries of what technology can achieve. Experience a future where productivity, efficiency, and intelligence converge, defining a new standard for success."/>
       <Services/>
       <ServiceCard />
       <AlphaBot/>

@@ -23,7 +23,6 @@ const Footer = () => {
     },
     {
       title: 'Services', withFlex:true, innerLinks: [
-        { title: "" },
         { title: "Security" },
         { title: "Software" },
         { title: "Marketing" },
@@ -32,6 +31,13 @@ const Footer = () => {
         { title: "Networking" },
         { title: "Data Recovery" },
         { title: "Artificial Intelligence" },
+      ]
+    },
+    {
+      title: 'Contact', innerLinks: [
+        { title: "25-08, Soho Capital, Podomoro City, Grogol Petamburan, Jakarta Barat, DKI Jakarta 11470, Indonesia." },
+        { title: "(+62) 812-9250-9595" },
+        { title: "(+62) 823-1024-2185" },
       ]
     },
   ]
@@ -53,28 +59,14 @@ const Footer = () => {
       <div className='flex flex-col sm:flex-row justify-between gap-5 w-full lg:mt-3'>
         {
           footerData.map((res, index) => {
-            return res.withFlex ?
-            (
-              <div key={index} className='grid sm:grid-cols-2 gap-x-1'>
-                  <p className='font-bold cursor-pointer'>{res.title}</p>
-                {res.innerLinks?.map((links, keys) => {
-                  return (
-                    <p className='text-gray cursor-pointer w-fit' key={keys}>{links.title}</p>
-                  )
-                })}
-              </div>
-            )
-            :
-            (
-              <div key={index}>
-                <p className='font-bold cursor-pointer'>{res.title}</p>
-                {res.innerLinks?.map((links, keys) => {
-                  return (
-                    <p className='text-gray cursor-pointer w-fit' key={keys}>{links.title}</p>
-                  )
-                })}
-              </div>
-            )
+            return <div key={index}>
+            <p className='font-bold cursor-pointer mb-2'>{res.title}</p>
+            {res.innerLinks?.map((links, keys) => {
+              return (
+                <p className='text-sm text-gray cursor-pointer w-fit max-w-[270px]' key={keys}>{links.title}</p>
+              )
+            })}
+          </div>
           })
         }
       </div>

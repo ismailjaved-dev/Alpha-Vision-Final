@@ -72,9 +72,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.path}
-                    className={`text-white text-md hidden lg:flex  ${
-                      pathName[1] == item.path.split("/")[1] && " font-bold"
-                    }`}
+                    className="text-white text-md hidden lg:flex font-bold"
                   >
                     {item.label}
                   </Link>

@@ -269,33 +269,33 @@ const renderData = data.filter((res) => res.pathname === pathName);
 
           </div>
 
-          <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold">{res.title}</h1>
+          <h1 className="text-h3 sm:text-h2 lg:text-h1 font-bold relative !z-[100]">{res.title}</h1>
           <p>{res.desc}</p>
 
         
 
-          <div className='py-10 border-b border-primary items-center mt-4'>
-            <div className=''>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>ABOUT</h3>
-              <p>{res.about}</p>
-            </div>
-            <div className='mt-12  '>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Benefits</h3>
+          <div className='py-2 sm:py-3 lg:py-5  mt-4 grid  lg:grid-cols-2 gap-10'>
+            <div className='p-5  gradientBg'>
+              <h3 className='text-h5 lg:text-h4 mb-3'>Benefits</h3>
               <div>{res.benefits}</div> {/* Changed from <p> to <div> */}
+            </div>
+            <div className='p-5  gradientBg'>
+              <h3 className='text-h5 lg:text-h4 mb-3'>ABOUT</h3>
+              <p>{res.about}</p>
             </div>
           </div>
 
-          <div className=' py-10 '>
+          <div className='py-2 sm:py-3 lg:py-5  mt-4 grid  lg:grid-cols-2 gap-10'>
+          <div className='p-5  gradientBg'>
             
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>Key Features</h3>
+              <h3 className='text-h5 lg:text-h4 mb-3'>Key Features</h3>
               <div>{res.keyFeatured}</div> {/* Changed from <p> to <div> */}
        
             
           </div>
 
-          <div className='py-10 '>
-            <div>
-              <h3 className='text-h5 lg:text-h4 leading-[16%]'>How It Works</h3>
+            <div className='p-5  gradientBg'>
+              <h3 className='text-h5 lg:text-h4 mb-3'>How It Works</h3>
               <p>{res.works}</p>
             </div>
            

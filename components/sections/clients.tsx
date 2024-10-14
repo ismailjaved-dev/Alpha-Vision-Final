@@ -136,7 +136,7 @@ const Clients = () => {
   return (
     <div className='mb-16'>
         <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5">
-            <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
+            <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold">
                 Our Clients
             </h2>
             <p className='text-md md:text-lg text-gray'>
@@ -145,7 +145,7 @@ const Clients = () => {
         </div>
         <div className="relative flex flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
             <div className="pointer-events-none relative flex gap-5 overflow-hidden">
-                <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-5">
+                <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around gap-5 abc">
                     {
                         marqueeX.map((item, index) => {
                             return (

@@ -42,7 +42,7 @@ const Services = () => {
   return (
     <div className='w-full max-w-fluid mx-auto overflow-x-hidden py-32 px-5'>
         <div className="text-center">
-            <h2 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold'> Our Services</h2>
+            <h2 className='text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold mb-3'> Our Services</h2>
             <p className='text-md text-gray'>
             Discover the Services We Can Offer to Support Your Business Needs.
             </p>
@@ -54,7 +54,7 @@ const Services = () => {
                 {
                     left_btns.map((item, index) => (
                         <Link href={item.path} className={`serviceAnchor pr-[25px] ${index === left_btns.length - 1 ? 'last-link' : ''}`}  key={index}>
-                            <Button variant='rounded' className="serviceBtn w-[200px] after:content-[''] after:block after:h-[1px] after:w-[25px] after:absolute after:right-0 after:border-t after:border-primary after:border-dashed after:translate-x-full">{item.label}</Button>
+                            <Button variant='rounded' className="serviceBtn !w-[210px] after:content-[''] after:block after:h-[1px] after:w-[25px] after:absolute after:right-0 after:border-t after:border-primary after:border-dashed after:translate-x-full">{item.label}</Button>
                         </Link>
                     ))
                 }
@@ -69,7 +69,7 @@ const Services = () => {
                 {
                     right_btns.map((item, index) => (
                         <Link href={item.path} className={`serviceAnchor pl-[25px] ${index === left_btns.length - 1 ? 'last-link' : ''}`}  key={index}>
-                            <Button variant='rounded' className="serviceBtn w-[200px] after:content-[''] after:block after:h-[1px] after:w-[25px] after:absolute after:left-0 after:border-t after:border-primary after:border-dashed after:-translate-x-full">{item.label}</Button>
+                            <Button variant='rounded' className="serviceBtn !w-[210px] after:content-[''] after:block after:h-[1px] after:w-[25px] after:absolute after:left-0 after:border-t after:border-primary after:border-dashed after:-translate-x-full">{item.label}</Button>
                         </Link>
                     ))
                 }

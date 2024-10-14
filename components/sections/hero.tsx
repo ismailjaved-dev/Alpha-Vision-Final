@@ -1,10 +1,10 @@
   'use client'
-
-import Image from 'next/image'
-import React from 'react'
-import {Button} from '../ui/button'
-import {usePathname} from 'next/navigation'
-import Link from 'next/link'
+  import Image from 'next/image'
+  import React from 'react'
+  import {Button} from '../ui/button'
+  import {usePathname} from 'next/navigation'
+  import Link from 'next/link'
+  import parse from 'html-react-parser';
 
 interface HeroProps {
   heading: string;
@@ -16,13 +16,13 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
   const pathname = usePathname();
 
   return (
-    <div className={`w-full h-[34.9375rem] relative z-10 px-5 pt-10 md:pt-0 ${pathname =='/' ? "md:h-[44.9375rem]" : "md:h-[35.9375rem]"}`}>
+    <div className={`w-full  relative z-10 px-5 pt-10 md:pt-0 ${pathname =='/' ? "h-[40.9375rem] md:h-[44.9375rem] " : "h-[34.9375rem] md:h-[35.9375rem]"}`}>
       <div className='w-full h-full flex justify-center items-center flex-col gap-[1.5625rem]'>
         <h1>
           <span
-            className='text-4xl md:text-5xl font-semibold font-grotesk text-white w-full text-center flex'>{heading}</span>
+            className='text-4xl md:text-5xl font-semibold font-grotesk text-white w-full text-center flex'>{parse(heading)}</span>
         </h1>
-        <p className={`text-md md:text-lg max-w-[39.125rem] mx-auto text-center ${pathname == '/' && 'opacity-60'}`}>
+        <p className={`text-md md:text-lg max-w-[39.125rem] mx-auto text-center hidden ${pathname == '/' && 'opacity-60 !block'}`}>
           {desc}
         </p>
 

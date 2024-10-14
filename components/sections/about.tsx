@@ -14,7 +14,7 @@ const data = [
       "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals and businesses across all industries, ushering in a new era of productivity, efficiency, and competency through the transformative power of technology.",
     content2:
       "Alpha Vision Technology represents a collaboration between two well-established and reputable technology providers in Malaysia. One specializes in hardware-related services, while the other brings expertise from the software industry. Through the synergies of these two companies, we provide an extensive range of solutions & services to our customer base in Indonesia, further expanding our clientele throughout Southeast Asia.",
-    image: "/blog.png",
+    image: "/about1.svg",
     link: "/",
     width: "full",
   },
@@ -22,7 +22,7 @@ const data = [
     tag: "Our Mission",
     content:
       "To revolutionize people and businesses across all industries to work productively, efficiently, and intelligently, with the power of technology.",
-    image: "/blog.png",
+    image: "/about3.svg",
     link: "/",
     width: "half",
   },
@@ -30,7 +30,7 @@ const data = [
     tag: "Our Vision",
     content:
       "We aim to become the leading IT solution provider for SMEs across Southeast Asia region with unparalleled service & competence. We aspire to be a trusted business partner, having long-term relationship with our clients, a rewarding workplace for our employees, and a positive force for the community.",
-    image: "/blog.png",
+    image: "/about2.svg",
     link: "/",
     width: "half",
   },
@@ -89,7 +89,7 @@ export default function About() {
       </div>
       <div className="rounded-lg space-y-12">
         <div className="text-center space-y-6">
-          <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
+          <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
             Meet with the team
           </h2>
           <p className="text-md md:text-lg text-gray">

@@ -15,12 +15,10 @@ const cardsData = [
     content: <>
       <p>(+62) 812-9250-9595</p>
       <p>(+62) 823-1024-2185</p>
-      <p>(+62) 823-1024-2185</p>
     </>
   }, {
     Icon: '/mailIcon.png',
     content: <>
-      <p>info@alphavtechnology.com</p>
       <p>alikhan@alphavtechnology.com</p>
     </>
   }, {
@@ -54,7 +52,7 @@ export default function Contact() {
 
   return <section className='w-full max-w-fluid mx-auto overflow-x-hidden py-24 px-5 space-y-16'>
     <div className="text-center space-y-6">
-      <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
+      <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
         Connect with us now
       </h2>
       <p className='text-md md:text-lg text-gray'>
@@ -83,11 +81,11 @@ export default function Contact() {
     </div>
     <div className="border-2 border-primary rounded-lg p-6 lg:p-16 space-y-12 bg-[#150F22]">
       <div className="text-center space-y-6">
-        <h2 className="text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
+        <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
           Get in touch with us
         </h2>
         <p className='text-md md:text-lg text-gray'>
-        Schedule a free consultation with one of our experts
+         Schedule a free consultation with one of our experts
         </p>
       </div>
       <ContactForm/>

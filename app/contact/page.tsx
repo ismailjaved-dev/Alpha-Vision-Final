@@ -5,7 +5,7 @@ import Contact from "@/components/sections/contact";
 const page = () => {
   return (
     <div>
-      <Hero heading="Contact Us" desc='Home / Contact Us'/>
+      <Hero heading="Book an Appointment" desc='Home / Book an Appointment'/>
       <Contact/>
       <Footer/>
     </div>
