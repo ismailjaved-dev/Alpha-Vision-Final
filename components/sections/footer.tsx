@@ -10,27 +10,27 @@ const Footer = () => {
     { title: 'Home' },
     {
       title: 'About Us', innerLinks: [
-        { title: "Meet the Team" }
+        { title: "Meet the Team", link:"/about#meet-the-team" }
       ]
     },
     {
       title: 'Our Products', innerLinks: [
-        { title: "Crypto" },
-        { title: "E-Leave" },
-        { title: "Inventory" },
-        { title: "E-Commerce" },
+        { title: "Crypto",link:"/products/crypto-currency-transaction-system" },
+        { title: "E-Leave", link:"/products/e-leave-management-system" },
+        { title: "Inventory",link:"/products/inventory-management-system" },
+        { title: "E-Commerce", link:"/products/e-commerce-management-system" },
       ]
     },
     {
       title: 'Services', withFlex:true, innerLinks: [
-        { title: "Security" },
-        { title: "Software" },
-        { title: "Marketing" },
-        { title: "Hardware" },
-        { title: "It Consulting" },
-        { title: "Networking" },
-        { title: "Data Recovery" },
-        { title: "Artificial Intelligence" },
+        { title: "Security",link:"/services/security" },
+        { title: "Software",link:"/services/software" },
+        { title: "Marketing",link:"/services/marketing" },
+        { title: "Hardware",link:"/services/hardware" },
+        { title: "IT Consulting",link:"/services/it-consulting" },
+        { title: "Networking",link:"/services/networking" },
+        { title: "Data Recovery",link:"/services/data-recovery" },
+        { title: "Artificial Intelligence",link:"/services/artificial-intelligence" },
       ]
     },
     {
@@ -59,11 +59,11 @@ const Footer = () => {
       <div className='flex flex-col sm:flex-row justify-between gap-5 w-full lg:mt-3'>
         {
           footerData.map((res, index) => {
-            return <div key={index}>
-            <p className='font-bold cursor-pointer mb-2'>{res.title}</p>
-            {res.innerLinks?.map((links, keys) => {
+            return <div key={index} >
+            <p className='font-bold cursor-pointer mb-2 '>{res.title}</p>
+            {res.innerLinks?.map((links:any, keys) => {
               return (
-                <p className='text-sm text-gray cursor-pointer w-fit max-w-[270px]' key={keys}>{links.title}</p>
+                <Link href={links.link ?  links.link : "/"} className='text-sm text-gray cursor-pointer w-full block max-w-[270px]' key={keys}>{links.title}</Link>
               )
             })}
           </div>

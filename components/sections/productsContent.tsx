@@ -13,23 +13,23 @@ const ProductsContent = () => {
   const data = [
     {
       title: "Crypto Currency Transaction System",
-      desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
+      desc: "AlphaVision Technology offers a secure and efficient Crypto Currency Transaction Management System, enabling seamless transactions with multi-currency support, real-time monitoring, and advanced encryption. Manage your digital assets with ease and confidence.",
       img:"/productImg.png",
       pathName:"/products/crypto-currency-transaction-system",
     },
      {
       title: "E-Commerce Management System",
-      desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
+      desc: "AlphaVision Technology offers an all-in-one E-Commerce Management System to streamline inventory, orders, and analytics, helping businesses boost efficiency and deliver a seamless customer experience.",
       img:"/productImg.png",
       pathName:"/products/e-commerce-management-system",
     }, {
       title: "E-Leave Management System",
-      desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
+      desc: "AlphaVision Technology offers an E-Leave Management System that simplifies and automates the leave process, providing employees, managers, and HR with an efficient and transparent platform for leave requests, approvals, and tracking.",
       img:"/productImg.png",
       pathName:"/products/e-leave-management-system",
     }, {
       title: "Inventory Management System",
-      desc: "Welcome to Alpha Vision Technology, where we believe we have what it takes to revolutionize individuals",
+      desc: "AlphaVision Technology offers an advanced Inventory Management System that provides real-time tracking, automated reordering, and comprehensive analytics to help businesses efficiently manage their inventory, reduce costs, and optimize stock levels across multiple locations.",
       img:"/productImg.png",
       pathName:"/products/inventory-management-system",
     },
@@ -78,11 +78,11 @@ const ProductsContent = () => {
                 <SwiperSlide key={index} className="gradientBg py-10 px-8 sm:px-16 min-h-[35rem] overflow-hidden ">
                      <div>
                      <h1 className="text-h4 md:text-h3 2xl:text-h2 font-bold leading-tight">{res.title}</h1>
-                     <p className={`max-w-[25rem]`}>{res.desc}</p>
+                     <p className={`lg:max-w-[25rem] mt-4`}>{res.desc}</p>
                      </div>
                   <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[40%] lg:!top-[35%] my-4 lg:my-0`}/>
                    <Link href={res.pathName}>
-                   <Button className="mt-8 lg:mt-[10rem]">Detail Product </Button>
+                   <Button className="mt-8 lg:mt-[10rem]">Product Details</Button>
                    </Link>
                </SwiperSlide>
               )

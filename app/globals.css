@@ -311,3 +311,9 @@ background: linear-gradient(90deg, rgba(247, 247, 247, 0) 20%, rgb(29 17 55) 100
         display: none;
     }
 }
+
+
+
+.product-text-container p{
+    margin-block: 10px;
+}

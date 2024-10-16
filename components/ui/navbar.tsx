@@ -120,7 +120,7 @@ const Navbar = () => {
                       })}
                       <Link href={"/contact"}>
                         <p
-                          className={`flex justify-between w-full border-b border-white p-5 text-lg ${
+                          className={`flex justify-between text-left w-full border-b border-white p-5 text-lg ${
                             state && "popUp"
                           }`}
                         >

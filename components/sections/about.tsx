@@ -87,7 +87,7 @@ export default function About() {
           </div>
         ))}
       </div>
-      <div className="rounded-lg space-y-12">
+      <div className="rounded-lg space-y-12" id="meet-the-team">
         <div className="text-center space-y-6">
           <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize">
             Meet with the team

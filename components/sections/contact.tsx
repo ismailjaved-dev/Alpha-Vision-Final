@@ -19,6 +19,7 @@ const cardsData = [
   }, {
     Icon: '/mailIcon.png',
     content: <>
+      <p>info@alphavtechnology.com</p>
       <p>alikhan@alphavtechnology.com</p>
     </>
   }, {
