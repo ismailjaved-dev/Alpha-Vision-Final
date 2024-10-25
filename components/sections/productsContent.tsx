@@ -80,7 +80,7 @@ const ProductsContent = () => {
                      <h1 className="text-h4 md:text-h3 2xl:text-h2 font-bold leading-tight">{res.title}</h1>
                      <p className={`lg:max-w-[25rem] mt-4`}>{res.desc}</p>
                      </div>
-                  <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[40%] lg:!top-[35%] my-4 lg:my-0`}/>
+                  <Image src={res.img} fill alt="" className={`!relative lg:!absolute !left-0 lg:!left-[43%] lg:!top-[37%] my-4 lg:my-0`}/>
                    <Link href={res.pathName}>
                    <Button className="mt-8 lg:mt-[10rem]">Product Details</Button>
                    </Link>
