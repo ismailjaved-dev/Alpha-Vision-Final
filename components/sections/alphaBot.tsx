@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 const AlphaBot = () => {
     const data = 
     {
-        heading: 'Make Your Work Fast, Efficient & Easy With AlphaBot ',
+        heading: 'Revolutionising Industries With Our AI-based Solution, AlphaBot',
         desc: 'We use the latest advancements in AI to deliver innovative and high-quality technology solutions.',
         links: [
             {

@@ -40,7 +40,7 @@ const ProductsContent = () => {
       <div className="w-full max-w-fluid mx-auto overflow-x-hidden text-center p-5 py-24">
         <div className="text-center flex flex-wrap justify-center">
           <h2 className="mb-3 text-4xl sm:text-h4 md:text-h3 lg:text-h2 font-grotesk font-semibold capitalize max-w-[56.25rem] leading-none">
-            We have amazing product for your company needs
+          Explore Our Range Of Products For Your Business Needs
           </h2>
           <p className="text-md md:text-lg text-gray w-full">
           Discover our range of products designed specifically for businesses across various industries.
