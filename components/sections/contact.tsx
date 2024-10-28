@@ -65,7 +65,7 @@ export default function Contact() {
         cardsData.map(({Icon, content}, index) => (
           <div
             key={index}
-            className="p-2 lg:p-4 h-64 rounded-xl flex flex-col gap-6 justify-center items-center bg-[#568BFA] text-white"
+            className="p-2 lg:p-4 h-64 rounded-xl flex flex-col gap-6 justify-center items-center  text-white bg-[#150F22] border-2 border-primary rounded-lg"
             data-aos="flip-right"
             >
             <div>
