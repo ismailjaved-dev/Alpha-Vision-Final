@@ -35,7 +35,7 @@ const Footer = () => {
     },
     {
       title: 'Contact', innerLinks: [
-        { title: "25-08, Soho Capital, Podomoro City, Grogol Petamburan, Jakarta Barat, DKI Jakarta 11470, Indonesia." },
+        { title: "25-08, Soho Capital, Podomoro City, Jakarta Barat, DKI Jakarta 11470, Indonesia." },
         { title: "(+62) 812-9250-9595" },
         { title: "(+62) 823-1024-2185" },
       ]

@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({heading, desc, videoBg}) => {
       {
         videoBg
           ?
-          <video autoPlay muted className='object-cover w-full h-full absolute top-0 left-0 -z-10 opacity-70'>
+          <video autoPlay muted loop className='object-cover w-full h-full absolute top-0 left-0 -z-10 opacity-70'>
             <source src={videoBg} type="video/mp4"/>
           </video>
           :
