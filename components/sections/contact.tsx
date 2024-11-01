@@ -37,8 +37,7 @@ const cardsData = [
     Icon: '/locationIcon.png',
     content: <>
       <p>25-08, Soho Capital,</p>
-      <p>Podomoro City,</p>
-      <p>Jakarta Barat,</p>
+      <p>Podomoro City, Jakarta Barat,</p>
       <p>DKI Jakarta 11470, Indonesia.</p>
     </>
   }]
